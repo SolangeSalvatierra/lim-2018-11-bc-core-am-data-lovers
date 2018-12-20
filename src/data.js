@@ -6,6 +6,7 @@ document.getElementById ("list-pokemones").innerHTML = pokemon;*/
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
+
 /*const example = () => {
   return 'example';
 };
@@ -55,8 +56,29 @@ let AOrder= listpokemon.sort( (a,b) =>{
 	
 });
 
+//KYARA
+//const example = () => {
+  //return 'example';
+//};
+
+//window.example = example;
 
 
+const filterData = (data, condition) =>{
+  	let arrTipo = [];
+	for (let i = 0; i < data.length; i++){
+	for(let x =0; x < data[i].type.length; x++)
+	if(data[i].type[x] === condition){
+   arrTipo.push(data[i] , data[i].name , data[i].id)
+   
+  }
+ }
+ return arrTipo;
+}
+
+//funcion que pinta
+//primero priorizar, hacerlo junta
+//KYARA
 
 
 
@@ -70,19 +92,6 @@ for (var i = 0; i < arrpokemon.length; i++) {
  console.log(arrpokemon[i].name);
 }
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*let arrpokemon = POKEMON.pokemon
 //for (let i = 0; i < arrpokemon.length; i++){
