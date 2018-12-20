@@ -63,7 +63,7 @@ let AOrder= listpokemon.sort( (a,b) =>{
 
 //window.example = example;
 
-const listPokemon = POKEMON.pokemon;
+
 const filterData = (data, condition) =>{
   	let arrTipo = [];
 	for (let i = 0; i < data.length; i++){
@@ -92,19 +92,6 @@ for (var i = 0; i < arrpokemon.length; i++) {
  console.log(arrpokemon[i].name);
 }
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*let arrpokemon = POKEMON.pokemon
 //for (let i = 0; i < arrpokemon.length; i++){

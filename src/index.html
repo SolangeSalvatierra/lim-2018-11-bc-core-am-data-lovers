@@ -8,32 +8,54 @@
   </head>
   
   <body>
-
-    <header>
-
-      <div class="wrapper"> 
-        <img src="ima/pokemon-logo.png" alt="logo pokemon go"> 
-      </div>
-  
-      <nav class="menu"> 
-        
+    <!--El div de inicio bienvenida e inforacion-->
+    <div id="home">
+      <header class="header2">
+        <div class="wrapper"> 
+       <div class="logo"> 
+          <img src="ima/logoNombre.png" id="imagenLogo"> 
+        </div>
+       
+        <nav class="menu"> 
            <a href= "#" id="btnStart" > Inicio </a>
            <a href= "#" id="btnOrder" > Pokemones </a>
            <a href= "#" id="btnFilter"> Tipos </a>
            <a href= "#" id="btnCalculate"> Vs </a>
-        
-      </nav>
-    </header>
+        </nav>
+      </div>
+      </header>
+      <!--slider de imagenes-->
+      <div id="slider">
+        <figure>
+          <img src="ima/slider1.jpg">
+          <img src="ima/slider2.jpg">
+          <img src="ima/slider3.jpg">
+          <img src="ima/slider4.jpg">
 
-   <div id="btnStart">
+        </figure>
+
+      </div>
+      <div>
+        <button  id="btn-list">Conoce tus pokemones</button>
+      </div>
+
+      <!--div de informacion-->
+    <div class="btnStart">
         
-        <section class= "Introduction wrapper">
+        <section class= "Introduction wrapper  ">
           <p>QUE ES POKEMON GO: DEFINICION
-Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS y Android.
+          Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS y Android.
 
-El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo. </p>
-</section>
- </div>
+          El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo. </p>
+        </section>
+     </div>
+
+    </div>
+
+  
+        
+
+  
     
 
 
@@ -49,7 +71,7 @@ El juego contiene microtransacciones, pero su descarga y desarrollo son gratuito
         </select>
           <div id="list-pokemones">
             <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
-          </div>
+  BN         </div>
         </section>
     
     </div>
