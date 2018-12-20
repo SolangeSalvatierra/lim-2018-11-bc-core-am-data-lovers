@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Pokemon Go</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <h1>Hola mundo
-    <p>como estas empecemos</p>
-  </h1>
+  
   <body>
 
-    <h1>HOLA MUNDO !</h1> 
-    <p>Pokemon Go</p>
+    <header>
+
+      <div class="wrapper"> 
+        <img src="ima/pokemon-logo.png" alt="logo pokemon go"> 
+      </div>
+  
+      <nav class="menu"> 
+        
+           <a href= "#" id="btnStart" > Inicio </a>
+           <a href= "#" id="btnOrder" > Pokemones </a>
+           <a href= "#" id="btnFilter"> Tipos </a>
+           <a href= "#" id="btnCalculate"> Vs </a>
+        
+      </nav>
+    </header>
+
+   <div id="btnStart">
+        
+        <section class= "Introduction wrapper">
+          <p>QUE ES POKEMON GO: DEFINICION
+Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS y Android.
+
+El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo. </p>
+</section>
+ </div>
+    
+
+
+    <div id="btnOrder">
+        <section class= "Content wrapper">
+         <!--<a href= "Pokemones"> </a> </nav> SEGUNDA SECCION--> 
+          <div class="options">
+            <select class="type-select" id="orderpokemon">
+              <option> A-Z </option>
+              <option> Z-A </option>
+              <option> N° de Identidad </option>
+          </div>
+        </select>
+          <div id="list-pokemones">
+            <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+          </div>
+        </section>
+    
+    </div>
+
+<!--Listado de pokemones por tipo -->
+<div>
   <select id="listTipoPoke">
   <option value="Por-tipo">Por tipo</option>
   <option value="Water">Agua</option>
@@ -30,15 +74,14 @@
   <option value="Poison">Veneno</option>
   <option value="Flying">Volador</option>
 </select> 
-
+</div>
 <div id="lista-por-tipo">
   
 </div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-   <script src="./data/pokemon/pokemon.js"></script> 
-       <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+<!--AVERIGUAR QUE ES
+    <div id="root"></div>-->
+    
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
