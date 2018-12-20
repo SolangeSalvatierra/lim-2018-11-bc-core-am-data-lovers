@@ -12,6 +12,8 @@ document.getElementById ("list-pokemones").innerHTML = pokemon;*/
 
 window.example = example;*/
 
+
+//  Mostrando data de objetos
 let listpokemon = POKEMON.pokemon
 let pokemones = [];
 for (let i = 0; i < listpokemon.length; i++) {
@@ -39,6 +41,23 @@ const crearTemplateDeCard = (data) => {
   })
   return templateListOfCards
 };
+
+// Funcion ORDENAR
+
+let AOrder= listpokemon.sort( (a,b) =>{
+		if (a.name > b.name) {
+			return 1;
+		}
+
+		if (a.name < b.name) {
+			return -1;
+		}
+	
+});
+
+
+
+
 
 
 /*let list = POKEMON.pokemon;

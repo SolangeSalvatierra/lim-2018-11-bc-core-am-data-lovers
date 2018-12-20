@@ -11,48 +11,47 @@
     <header>
 
       <div class="wrapper"> 
-        <div class= "logo"> Pokemon Go </div>
+        <a href="index.html"> <img src="ima/pokemon-logo.png" alt="logo pokemon go"> </a>
+      </div>
   
-      <nav> 
+      <nav class="menu"> 
         
-           <a href= "#"> Inicio </a>
-           <a href= "pokemones"> Pokemones </a>
-           <a href= "#"> Tipos </a>
+           <a href= "#" id="btnStart" > Inicio </a>
+           <a href= "#" id="btnOrder" > Pokemones </a>
+           <a href= "#" id="btnFilter"> Tipos </a>
+           <a href= "#" id="btnCalculate"> Vs </a>
         
       </nav>
     </header>
 
+   <div id="btnStart">
+        
         <section class= "Introduction wrapper">
           <p>QUE ES POKEMON GO: DEFINICION
 Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS y Android.
 
 El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo. </p>
 </section>
+ </div>
+    
 
-       <div>
-        <a href="index.html"> <img src="ima/pokemon-logo.png" alt="logo pokemon go"></a>
-      </div>
-            
+
+    <div id="btnOrder">
         <section class= "Content wrapper">
-
          <!--<a href= "Pokemones"> </a> </nav> SEGUNDA SECCION--> 
-
-        <div class="navigation list">
-            <h4> </h4>
-         </div>
-       <div class="options">
-         <select class="type-select" id="orderpokemon">
-           <option> A-Z </option>
-           <option> Z-A </option>
-           <option> N° de Identidad </option>
-         </select>
-       </div>
-
-       <section  class="col-md-9 col-sm-10 col-xs-12">
+          <div class="options">
+            <select class="type-select" id="orderpokemon">
+              <option> A-Z </option>
+              <option> Z-A </option>
+              <option> N° de Identidad </option>
+          </div>
+        </select>
           <div id="list-pokemones">
             <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
           </div>
         </section>
+    
+    </div>
 
 
 
