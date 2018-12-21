@@ -103,7 +103,7 @@ padding-top: 100px;
 }
 #slider figure{
     position: relative;
-    width: 520%;
+    width: 500%;
     margin: 0;
     left: 0;
     animation: 10s slider infinite;
@@ -177,7 +177,7 @@ background: #00b7f8;
   width: 82%;
   display: flex;
   flex-wrap: wrap;
-  align-items: right;
+  align-items: rith;
 }
 
 .blog-card {
@@ -207,6 +207,14 @@ background: #00b7f8;
   opacity: 0.9;
 }
 
+
+.footer{
+    margin: 10px;
+    color: black; 
+    font-family: 'Handlee', cursive;
+    font-size: 100%;
+    text-align: center;
+}
 
 @media screen and (max-width: 950px)
 {
@@ -240,6 +248,11 @@ header nav {
  
   }
 
+
+#allThePokemones {
+  width: auto;
+
+}
 
  	
 

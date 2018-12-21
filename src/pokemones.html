@@ -7,3 +7,67 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   
+  <body>
+    <!--Navegador-->
+  <div id="home">
+    <header class="header2">
+    <div class="wrapper"> 
+      <div class="logo"> 
+        <img src="ima/logoNombre.png" id="imagenLogo"> 
+      </div>
+        <nav class="menu">
+
+            <a href= "#" id= "btnStart" > Inicio </a>  
+            <a href= "pokemones" id= "btnOrder" > Pokemones </a>
+            <a href= "#" id= "btnFilter" > Tipos </a> 
+            <a href= "#" id= "btnCalculate"> Vs </a> 
+        </nav> 
+    </div>
+    </header>
+
+       <!--Seccion POKEMONES-->
+<div id= "listdePokemones">
+    <section class= "Content wrapper">
+         <!--<a href= "Pokemones"> </a> </nav> SEGUNDA SECCION--> 
+      <div class= "options" >
+          <select id="orderpokemon" onchange= "selectOrder()"class="type-select" >
+            <option value ="AOrder"> A-Z </option>
+            <option value ="2"> Z-A </option>
+            <option value ="3"> N° de Identidad </option>
+          </select>
+        <div id= "allThePokemones">
+            <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+        </div>
+      </div>
+    </section>
+    
+    <!--Listado de pokemones por tipo -->
+  <div>
+    <select id="listTypePoke">
+      <option value="Por-tipo">Por tipo</option>
+      <option value="Water">Agua</option>
+      <option value="Bug">Bicho</option>
+      <option value="Dragon">Dragon</option>
+      <option value="Electric">Electrico</option>
+      <option value="Ghost">Fantasma</option>
+      <option value="Fire">Fuego</option>
+      <option value="Ice">Hielo</option>
+      <option value="Fight">Lucha</option>
+      <option value="Normal">Normal</option>
+      <option value="Grass">Hierba</option>
+      <option value="Psychic">Psiquico</option>
+      <option value="Rock">Roca</option>
+      <option value="Earth">Tierra</option>
+      <option value="Poison">Veneno</option>
+      <option value="Flying">Volador</option>
+    </select> 
+  </div>
+</div>
+<!--AVERIGUAR QUE ES
+    <div id="root"></div>-->
+    
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

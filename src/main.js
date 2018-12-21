@@ -27,10 +27,10 @@ homeStar.addEventListener("click",()=>{
 
 
 
-/*function selectOrder(){
+function selectOrder(){
   let listOrder= document.getElementById ("orderpokemon").value;
   document.getElementById("allThePokemones"),innerHTML= crearTemplateDeCard(AOrder);
-  }*/
+  }
   
 
 
