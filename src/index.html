@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Pokemon Go</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  
-  <body>
-    <!--Navegador-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Navegador-->
   <div id="home">
     <header class="header2">
-    <div class="wrapper"> 
-      <div class="logo"> 
-        <img src="ima/logoNombre.png" id="imagenLogo"> 
-      </div>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="ima/logoNombre.png" id="imagenLogo">
+        </div>
         <nav class="menu">
 
-            <a href= "#" id= "btnStart" > Inicio </a>  
-            <a href= "pokemones" id= "btnOrder" > Pokemones </a>
-            <a href= "#" id= "btnFilter" > Tipos </a> 
-            <a href= "#" id= "btnCalculate"> Vs </a> 
-        </nav> 
-    </div>
+          <a href="#" id="btnStart"> Inicio </a>
+          <a href="#" id="btnOrder"> Pokemones </a>
+          <a href="#" id="btnFilter"> Tipos </a>
+          <a href="#" id="btnCalculate"> Vs </a>
+        </nav>
+      </div>
     </header>
-      <!--slider de imagenes-->
+    <!--slider de imagenes-->
     <div id="slider">
       <figure>
-        <img src= "ima/slider1.jpg"  clas= "responsive">
-        <img src= "ima/slider2.jpg"  clas= "responsive">
-        <img src= "ima/slider3.jpg"  clas= "responsive">
-        <img src= "ima/slider4.jpg"  clas= "responsive">
+        <img src="ima/slider1.jpg" clas="responsive">
+        <img src="ima/slider2.jpg" clas="responsive">
+        <img src="ima/slider3.jpg" clas="responsive">
+        <img src="ima/slider4.jpg" clas="responsive">
       </figure>
     </div>
     <div>
-      <button  id="btn-list"> Conoce tus pokemones </button>
+      <button id="btn-list"> Conoce tus pokemones </button>
     </div>
-      <!--div de informacion-->
+    <!--div de informacion-->
     <div class="history">
-      <section class= "Introduction wrapper">
+      <section class="Introduction wrapper">
         <p>QUE ES POKEMON GO: DEFINICION
-        Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS y Android.
+          Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS
+          y Android.
 
-        El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo. </p>
+          El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en
+          buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de
+          interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus
+          poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo.
+        </p>
       </section>
     </div>
   </div>
 
-       <!--Seccion POKEMONES-->
-<div id= "listdePokemones">
-    <section class= "Content wrapper">
-         <!--<a href= "Pokemones"> </a> </nav> SEGUNDA SECCION--> 
-      <div class= "options" >
-          <select id="orderpokemon" onchange= "selectOrder()"class="type-select" >
-            <option value ="AOrder"> A-Z </option>
-            <option value ="2"> Z-A </option>
-            <option value ="3"> N° de Identidad </option>
-          </select>
-        <div id= "allThePokemones">
-            <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+  <!--Seccion POKEMONES-->
+  <div id="listdePokemones">
+    <section class="Content wrapper">
+      <!--<a href= "Pokemones"> </a> </nav> SEGUNDA SECCION-->
+      <div class="options">
+        <select id="orderpokemon" onchange="selectOrder()" class="type-select">
+          <option value="AOrder"> A-Z </option>
+          <option value="2"> Z-A </option>
+          <option value="3"> N° de Identidad </option>
+        </select>
+        <div id="allThePokemones">
+          <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
         </div>
       </div>
     </section>
-    
+
     <!--Listado de pokemones por tipo -->
-  <div>
-    <select id="listTypePoke">
-      <option value="Por-tipo">Por tipo</option>
-      <option value="Water">Agua</option>
-      <option value="Bug">Bicho</option>
-      <option value="Dragon">Dragon</option>
-      <option value="Electric">Electrico</option>
-      <option value="Ghost">Fantasma</option>
-      <option value="Fire">Fuego</option>
-      <option value="Ice">Hielo</option>
-      <option value="Fight">Lucha</option>
-      <option value="Normal">Normal</option>
-      <option value="Grass">Hierba</option>
-      <option value="Psychic">Psiquico</option>
-      <option value="Rock">Roca</option>
-      <option value="Earth">Tierra</option>
-      <option value="Poison">Veneno</option>
-      <option value="Flying">Volador</option>
-    </select> 
+    <div>
+      <select id="listTypePoke">
+        <option value="Por-tipo">Por tipo</option>
+        <option value="Water">Agua</option>
+        <option value="Bug">Bicho</option>
+        <option value="Dragon">Dragon</option>
+        <option value="Electric">Electrico</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fight">Lucha</option>
+        <option value="Normal">Normal</option>
+        <option value="Grass">Hierba</option>
+        <option value="Psychic">Psiquico</option>
+        <option value="Rock">Roca</option>
+        <option value="Earth">Tierra</option>
+        <option value="Poison">Veneno</option>
+        <option value="Flying">Volador</option>
+      </select>
+    </div>
   </div>
-</div>
-<!--AVERIGUAR QUE ES
+  <!--AVERIGUAR QUE ES
     <div id="root"></div>-->
-    
-    <script src="./data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-    <p class="footer"> Created by Kyara Bahamonde ® y Solange Salvatierra ®  </p>
-  </body>
+
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <p class="footer"> Created by Kyara Bahamonde ® y Solange Salvatierra ® </p>
+</body>
+
 </html>

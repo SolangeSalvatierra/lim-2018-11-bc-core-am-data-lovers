@@ -6,20 +6,25 @@
 const ListPokemones = document.getElementById("allThePokemones");
 ListPokemones.innerHTML = crearTemplateDeCard(listpokemon);
  
-//botton Conoce tus Pokemones
-const start=document.getElementById("btn-list");//EVENTO PARA entrar a la 2 pagina
+//funcion mostrar ocultar del nav
+const start=document.getElementById("btnStart");//EVENTO PARA entrar a la 2 pagina
 start.addEventListener("click",()=>{
+  document.getElementById ("home").style.display="block";
+  document.getElementById ("listdePokemones").style.display="none";
+})
+
+const homeStart=document.getElementById("btnOrder");//EVENTO PARA entrar a la 2 pagina
+homeStart.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById ("listdePokemones").style.display="block";
 })
 
-const homeStart=document.getElementById("btnStart");//EVENTO PARA entrar a la 2 pagina
-homeStar.addEventListener("click",()=>{
+//botton Conoce tus Pokemones
+const BtInicio=document.getElementById("btn-list");//EVENTO PARA entrar a la 2 pagina
+BtInicio.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById ("listdePokemones").style.display="block";
 })
-
-
 
 //mostrar pokemones de A-Z
 
