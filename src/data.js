@@ -2,25 +2,12 @@
 let pokemon = JSON.stringify (listpokemon);
 document.getElementById ("list-pokemones").innerHTML = pokemon;*/
 
-
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-
-/*const example = () => {
-  return 'example';
-};
-
-window.example = example;*/
-
-
 //  Mostrando data de objetos
 let listpokemon = POKEMON.pokemon
 let pokemones = [];
 for (let i = 0; i < listpokemon.length; i++) {
   pokemones.push(listpokemon[i].id);
 }
-
 //Funcion para pintar tarjetas con datos pokemon
 const crearTemplateDeCard = (data) => {
   let templateListOfCards = '';
@@ -43,9 +30,22 @@ const crearTemplateDeCard = (data) => {
   return templateListOfCards
 };
 
+// esta es una función de ejemplo
+// puedes ver como agregamos la función a nuestro objeto global window
+
+
+/*const example = () => {
+  return 'example';
+};
+
+window.pokemon = { 
+ sortData,
+ filterData,
+ };
+
 // Funcion ORDENAR
 
-let AOrder= listpokemon.sort( (a,b) =>{
+/*let AOrder= listpokemon.sort( (a,b) =>{
 		if (a.name > b.name) {
 			return 1;
 		}
@@ -53,8 +53,10 @@ let AOrder= listpokemon.sort( (a,b) =>{
 		if (a.name < b.name) {
 			return -1;
 		}
-	
+	return allThePokemones;
 });
+
+
 
 //KYARA
 //const example = () => {
