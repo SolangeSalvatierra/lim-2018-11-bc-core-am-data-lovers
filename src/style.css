@@ -1,26 +1,26 @@
-*{margin:0; padding:0;}
-
-#home{
-        display:block;
-        }
-
+*{
+    margin:0; 
+    padding:0;
+    }
 #listdePokemones{
-        display:none;
-        }
-
+    display:none;
+}
+#home{
+    display:block;
+}
 
 
 body {
-  background-image: url(ima/fondo.jpg);
-	background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+    background-image: url(ima/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 	font-family: "Lato",sans-serif;
 }
 
 header {
  	width: 100%;
-  overflow: hidden;
+    overflow: hidden;
  	background:red;
  	margin-bottom: 20px;
 }
@@ -32,17 +32,16 @@ overflow: hidden;
 }
 
 #imagenLogo{
- max-width: 100%;
- max-height: 80px;
+max-width: 80%;
+max-height: 80px;
 float: left;
+padding: 10px 5px 10px 5px;
 
 }
 
-
-
 header nav {
     float : right;
-    line-height:150px;
+    line-height:80px;
     }
 header nav a  {
     display: inline-block;
@@ -75,23 +74,12 @@ img {
 .header2 nav{
     line-height: 100px;
 }
-.Introduction, .allThePokemones; {
-    background-color:rgba(253, 254, 254, 0.6);
-    border-radius: 25px;
-    color:white; 
-    font-family: 'Handlee', cursive;
-    font-size: 100%;
-    letter-spacing: 0.5px;
-    margin: auto;
-    padding: 40px;
-    width: 50%; 
-}
 
   p { 
     color:black;
 }
 
-.btnStart{
+.Start{
 
 padding-top: 100px;
 }
@@ -142,7 +130,7 @@ padding-top: 100px;
     }
 } 
 
-#btn-list {
+#pokemones {
 background: #00b7f8;
   border-bottom: 5px solid #0045a6;
   border-radius: 12px;
@@ -173,30 +161,65 @@ background: #00b7f8;
 
 
 /* cajitas pokemon */
-#allThePokemones {
-  width: 82%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: rith;
+
+
+
+.listdePokemones {
+padding: 5px 60px 40px 30px;
+margin: 40px 50px 40px 50px;
+
 }
 
+#allThePokemones {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 50px 40px 50px;
+  padding: 30px 20px 40px 20px;
+
+}
+
+#orderpokemon {
+       display: flex;
+    margin: 100px 100px 100px 450px;
+    padding: 10px 20px 5px 20px;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px 60px 10px 20px;
+    margin-bottom: 10px;
+}
+  }
+  #orderpokemon:hover{
+    background: #0096f7;
+}
+
+.Content {
+    width:120%;
+    max-width:1000px;
+    margin:auto;
+    overflow: hidden;
+    padding: 20px 10px 20px 10px;
+    }
+
 .blog-card {
- width: 100%;
-  background: white;
-  border-radius: 10px;
-  padding: 8px;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 1;
+    height: 150px;
+    width: 135px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 7px rgba(0,0,0,0.16);
+	color: #2B4D86;
+	float: left;
+	font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: grid;
+    align-content: center;
+    padding: 30px 20px 40px 20px;
 }
 
 .card-link {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
+    margin: 20px 20px 20px 20px;
 }
 .card-link:hover .post-title {
   transition: color 0.3s ease;
@@ -216,7 +239,7 @@ background: #00b7f8;
     text-align: center;
 }
 
-@media screen and (max-width: 950px)
+@media screen and (max-width: 650px)
 {
 
 
@@ -224,14 +247,13 @@ body {
 	background-size: cover;
 }
  	
-header.logo,
 header nav {
- 	width: 100%;
+ 	width: 50%;
  	text-align: center;
  	line-height: 100px;
  	}
 
-.header {
+.header2 {
  	height: auto;
  	}
 
@@ -242,17 +264,13 @@ header nav {
  
  	}
 
-.responsive {
-  width: 100%;
-  height: auto;
- 
-  }
-
-
 #allThePokemones {
   width: auto;
 
 }
 
+.listdePokemones {
+    padding:auto;
+    }
  	
 

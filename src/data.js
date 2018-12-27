@@ -9,10 +9,10 @@ for (let i = 0; i < listpokemon.length; i++) {
   pokemones.push(listpokemon[i].id);
 }
 //Funcion para pintar tarjetas con datos pokemon
-const crearTemplateDeCard = (data) => {
-  let templateListOfCards = '';
+const Template = (pokemones) => {
+  let templateListPoke = '';
   // recorremos nuestro array con forEach
-  data.forEach((pokemon) => {
+  pokemones.forEach((pokemon) => {
     // creamos un template(string) por cada elemento del array
     const card = `
       <div class="card-link">
@@ -25,18 +25,13 @@ const crearTemplateDeCard = (data) => {
         </article>
       </div>
     `;
-    templateListOfCards += card;
+    templateListPoke += card;
   })
-  return templateListOfCards
+  return templateListPoke;
 };
 
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
-
-
-/*const example = () => {
-  return 'example';
-};
 
 window.pokemon = { 
  sortData,
@@ -44,8 +39,11 @@ window.pokemon = {
  };
 
 // Funcion ORDENAR
+ const sortData= (data,sortBy,sortOrder) => {
+ 
+  let arrayOrder = [];
+   arrayOrder.sort( (a,b) =>{
 
-/*let AOrder= listpokemon.sort( (a,b) =>{
 		if (a.name > b.name) {
 			return 1;
 		}
@@ -53,9 +51,12 @@ window.pokemon = {
 		if (a.name < b.name) {
 			return -1;
 		}
-	return allThePokemones;
+	return array;
 });
 
+
+return 'example';
+};
 
 
 //KYARA

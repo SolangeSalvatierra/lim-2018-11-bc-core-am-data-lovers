@@ -10,21 +10,21 @@
 
 <body>
   <!--Navegador-->
-  <div id="home">
-    <header class="header2">
-      <div class="wrapper">
-        <div class="logo">
-          <img src="ima/logoNombre.png" id="imagenLogo">
-        </div>
-        <nav class="menu">
 
-          <a href="#" id="btnStart"> Inicio </a>
-          <a href="#" id="btnOrder"> Pokemones </a>
-          <a href="#" id="btnFilter"> Tipos </a>
-          <a href="#" id="btnCalculate"> Vs </a>
-        </nav>
+  <header class="header2">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="ima/logoNombre.png" id="imagenLogo">
       </div>
-    </header>
+      <nav class="menu">
+        <a href="#" id="Start"> Inicio </a>
+        <a href="#" id="Order"> Pokemones </a>
+        <a href="#" id="Filter"> Tipos </a>
+        <a href="#" id="Calculate"> Vs </a>
+      </nav>
+    </div>
+  </header>
+  <div id="home">
     <!--slider de imagenes-->
     <div id="slider">
       <figure>
@@ -35,7 +35,7 @@
       </figure>
     </div>
     <div>
-      <button id="btn-list"> Conoce tus pokemones </button>
+      <button id="pokemones"> Conoce tus pokemones </button>
     </div>
     <!--div de informacion-->
     <div class="history">
@@ -53,14 +53,13 @@
     </div>
   </div>
 
-  <!--Seccion POKEMONES-->
+  <!--<SEGUNDA SECCION-->
   <div id="listdePokemones">
-    <section class="Content wrapper">
-      <!--<a href= "Pokemones"> </a> </nav> SEGUNDA SECCION-->
+    <section class="Content">
       <div class="options">
         <select id="orderpokemon" onchange="selectOrder()" class="type-select">
-          <option value="AOrder"> A-Z </option>
-          <option value="2"> Z-A </option>
+          <option value="AOrder"> A - Z </option>
+          <option value="AOrder"> Z - A </option>
           <option value="3"> N° de Identidad </option>
         </select>
         <div id="allThePokemones">
@@ -70,8 +69,8 @@
     </section>
 
     <!--Listado de pokemones por tipo -->
-    <div>
-      <select id="listTypePoke">
+    <div id="listTypePoke">
+      <select id="typepokemon">
         <option value="Por-tipo">Por tipo</option>
         <option value="Water">Agua</option>
         <option value="Bug">Bicho</option>
@@ -89,6 +88,9 @@
         <option value="Poison">Veneno</option>
         <option value="Flying">Volador</option>
       </select>
+      
+          <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+        </div>
     </div>
   </div>
   <!--AVERIGUAR QUE ES

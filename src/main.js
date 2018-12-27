@@ -2,29 +2,56 @@
 //  Mostrando todos los pokemones.
 /*document.getElementById("allThePokemones").innerHTML = listpokemon;*/
 
+
+
+
+
+
 //Mostrando con template
 const ListPokemones = document.getElementById("allThePokemones");
-ListPokemones.innerHTML = crearTemplateDeCard(listpokemon);
+ListPokemones.innerHTML = Template(listpokemon);
  
 //funcion mostrar ocultar del nav
-const start=document.getElementById("btnStart");//EVENTO PARA entrar a la 2 pagina
+const start=document.getElementById("Start");//EVENTO PARA entrar a la 2 pagina
 start.addEventListener("click",()=>{
   document.getElementById ("home").style.display="block";
   document.getElementById ("listdePokemones").style.display="none";
 })
 
-const homeStart=document.getElementById("btnOrder");//EVENTO PARA entrar a la 2 pagina
+//Nav Start
+const homeStart=document.getElementById("Start");
 homeStart.addEventListener("click",()=>{
+  document.getElementById (" ").style.display="none";
+  document.getElementById ("home").style.display="block";
+})
+//Nav Order
+const homeOrder=document.getElementById("Order");//EVENTO PARA entrar a la 2 pagina
+homeOrder.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById ("listdePokemones").style.display="block";
 })
-
+//Nav Filter
+const homeFilter=document.getElementById("Filter");//EVENTO PARA entrar a la 3 pagina
+homeFilter.addEventListener("click",()=>{
+  document.getElementById ("home").style.display="none";
+  document.getElementById ("listdePokemones").style.display="block";
+})
+//Nav Calculate
+const homeCalculate=document.getElementById("Calculate");//EVENTO PARA entrar a la 4 pagina
+homeCalculate.addEventListener("click",()=>{
+  document.getElementById ("home").style.display="none";
+  document.getElementById (" ").style.display="block";
+})
 //botton Conoce tus Pokemones
-const BtInicio=document.getElementById("btn-list");//EVENTO PARA entrar a la 2 pagina
+const BtInicio=document.getElementById("pokemones");//EVENTO PARA entrar a la 2 pagina
 BtInicio.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById ("listdePokemones").style.display="block";
 })
+
+
+
+
 
 //mostrar pokemones de A-Z
 
@@ -32,11 +59,26 @@ BtInicio.addEventListener("click",()=>{
 
 
 
-function selectOrder(){
+
+/*const sortData = document.getElementById( "orderpokemon" );
+sortData.addEventListener("change",() => {
+  const listenSortBy = sortData.options [sortData.selectedIndex].value; 
+  templateListOfCards(data.sortData(array,parseInt(allThePokemones[0]),parseInt(allThePokemones);
+  return 1;
+})
+*/
+
+
+
+
+
+
+
+/*function selectOrder(){
   let listOrder= document.getElementById ("orderpokemon").value;
   document.getElementById("allThePokemones"),innerHTML= crearTemplateDeCard(AOrder);
   }
-  
+  */
 
 
 
