@@ -13,7 +13,7 @@
 
   <header class="header2">
     <div class="wrapper">
-      <div class="logo">
+      <div >
         <img src="ima/logoNombre.png" id="imagenLogo">
       </div>
       <nav class="menu">
@@ -26,20 +26,22 @@
   </header>
   <div id="home">
     <!--slider de imagenes-->
-    <div id="slider">
-      <figure>
-        <img src="ima/slider1.jpg" clas="responsive">
-        <img src="ima/slider2.jpg" clas="responsive">
-        <img src="ima/slider3.jpg" clas="responsive">
-        <img src="ima/slider4.jpg" clas="responsive">
-      </figure>
+    <div class="slider">
+      <ul>
+        <li> <img src="ima/slider1.jpg"> </li>
+        <li> <img src="ima/slider2.jpg"> </li>
+        <li> <img src="ima/slider3.jpg"> </li>
+        <li> <img src="ima/slider5.jpg"> </li>
+        <li> <img src="ima/slider4.jpg"> </li>
+
+      </ul>
     </div>
     <div>
       <button id="pokemones"> Conoce tus pokemones </button>
     </div>
     <!--div de informacion-->
     <div class="history">
-      <section class="Introduction wrapper">
+      <section class="Introduction">
         <p>QUE ES POKEMON GO: DEFINICION
           Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS
           y Android.
@@ -56,17 +58,18 @@
   <!--<SEGUNDA SECCION-->
   <div id="listdePokemones">
     <section class="Content">
-      <div class="options">
         <select id="orderpokemon" onchange="selectOrder()" class="type-select">
+            <h2> Ordenar por: </h2>
           <option value="AOrder"> A - Z </option>
           <option value="AOrder"> Z - A </option>
           <option value="3"> N° de Identidad </option>
         </select>
-        <div id="allThePokemones">
+        <div id="allThePokemones" style="position-center">
           <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
         </div>
       </div>
     </section>
+    </div>
 
     <!--Listado de pokemones por tipo -->
     <div id="listTypePoke">
@@ -92,7 +95,7 @@
           <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
         </div>
     </div>
-  </div>
+  
   <!--AVERIGUAR QUE ES
     <div id="root"></div>-->
 

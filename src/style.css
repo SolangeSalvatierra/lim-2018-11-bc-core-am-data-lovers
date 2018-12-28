@@ -9,7 +9,6 @@
     display:block;
 }
 
-
 body {
     background-image: url(ima/fondo.jpg);
     background-size: cover;
@@ -25,8 +24,7 @@ header {
  	margin-bottom: 20px;
 }
 .wrapper{
-width:90%;
-max-width:1000px;
+width:80%;
 margin:auto;
 overflow: hidden;
 }
@@ -84,52 +82,42 @@ img {
 padding-top: 100px;
 }
 
-#slider{
-   padding-top: 100px;
-    overflow: hidden;
-       
+.slider{
+   width: 80%;
+   margin: auto;
+   overflow:hidden;
+   padding: 150px 0px 2px 60px;
+      
 }
-#slider figure{
-    position: relative;
+.slider ul{
+    display: flex; 
+    animation: cambio 10s infinite alternate ease; 
     width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 10s slider infinite;
-
 }
-#slider figure img{
-        width: 20%;
-        float: left;
-        height:550px;
-
+.slider li{
+    list-style: none;
 }
-@keyframes slider{
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-    95%{
-        left: -300%;
-    }
-} 
+.slider img {
+width: 90%;
+position: center;
+margin: 5px auto;
+padding: 5px 5px;
+}
 
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0 }
+    
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+    
 #pokemones {
 background: #00b7f8;
   border-bottom: 5px solid #0045a6;
@@ -141,11 +129,11 @@ background: #00b7f8;
   font-family: 'Raleway', Arial, Helvetica;
   font-size: 28px;
   height: 20%;
-  margin: 80px auto;
+  margin: 40px auto;
   padding: 20px 20px;
   text-align: center;
   transition: all 0.2s ease 0s;
-  width: 80%;
+  width: 60%;
 }
 .boton:hover{
     background: #0096f7;
@@ -160,6 +148,15 @@ background: #00b7f8;
 }
 
 
+.Introduction {
+    width:50%;
+    margin:auto;
+    
+    }
+
+
+
+
 /* cajitas pokemon */
 
 
@@ -169,6 +166,13 @@ padding: 5px 60px 40px 30px;
 margin: 40px 50px 40px 50px;
 
 }
+
+.Content {
+    width:100%;
+    max-width:1000px;
+    overflow: hidden;
+    padding: 20px 10px 20px 10px;
+    }
 
 #allThePokemones {
   display: flex;
@@ -194,13 +198,7 @@ margin: 40px 50px 40px 50px;
     background: #0096f7;
 }
 
-.Content {
-    width:120%;
-    max-width:1000px;
-    margin:auto;
-    overflow: hidden;
-    padding: 20px 10px 20px 10px;
-    }
+
 
 .blog-card {
     height: 150px;
@@ -239,10 +237,8 @@ margin: 40px 50px 40px 50px;
     text-align: center;
 }
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 414px)
 {
-
-
 body {
 	background-size: cover;
 }
@@ -261,8 +257,17 @@ header nav {
 
 .header nav {
 	line-height: 50px;
- 
+
  	}
+.card-link{
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px; 
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+  }
+
+
 
 #allThePokemones {
   width: auto;
@@ -272,5 +277,6 @@ header nav {
 .listdePokemones {
     padding:auto;
     }
- 	
+ 	}
+ 
 
