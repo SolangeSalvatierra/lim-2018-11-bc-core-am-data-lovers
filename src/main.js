@@ -1,16 +1,49 @@
-
-//  Mostrando todos los pokemones.
+// Mostrando todos los pokemones.
 /*document.getElementById("allThePokemones").innerHTML = listpokemon;*/
 
 
-
-
-
-
 //Mostrando con template
-const ListPokemones = document.getElementById("allThePokemones");
-ListPokemones.innerHTML = Template(listpokemon);
+const template = (list) => {
+  let templateListPoke = "";
+  // recorremos nuestro array con forEach
+  list.forEach((dataPoke) => {
+    // creamos un template(string) por cada elemento del array
+    const card = `
+      <div class="card-link">
+        <article class="blog-card">
+          <img class="post-image" src="${ dataPoke.img }" />
+          <h3 class="post-title">${ dataPoke.id }</h3>
+          <div class="article-details">
+            <h4 class="post-category">${ dataPoke.name }</h4>
+          </div>
+        </article>
+      </div>
+    `;
+    templateListPoke += card;
+  });
+  document.getElementById("allThePokemones").innerHTML = templateListPoke;
+};
+template(dataPoke);
+
+//Funcion de ordenar de A-Z
+const sortBy = document.getElementById ("orderpokemon");
+  sortBy.addEventListener("change",() => {
+     sortBy.options [sortBy.selectedIndex].value;
+    template(sortData(dataPoke,name,0));
+    return 1;
+  });
+
+  /*const sortOrder = document.getElementById ("orderpokemon");
+  sortOrder.addEventListener("change",() => {
+    sortOrder.options [sortOrder.selectedIndex].value; 
+    template (sortData(dataPoke,descendente,0));
+    return -1;
+  });*/
+  
  
+
+
+
 //funcion mostrar ocultar del nav
 const start=document.getElementById("Start");//EVENTO PARA entrar a la 2 pagina
 start.addEventListener("click",()=>{
@@ -24,24 +57,28 @@ homeStart.addEventListener("click",()=>{
   document.getElementById (" ").style.display="none";
   document.getElementById ("home").style.display="block";
 })
+
 //Nav Order
 const homeOrder=document.getElementById("Order");//EVENTO PARA entrar a la 2 pagina
 homeOrder.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById ("listdePokemones").style.display="block";
 })
+
 //Nav Filter
 const homeFilter=document.getElementById("Filter");//EVENTO PARA entrar a la 3 pagina
 homeFilter.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById ("listdePokemones").style.display="block";
 })
+
 //Nav Calculate
 const homeCalculate=document.getElementById("Calculate");//EVENTO PARA entrar a la 4 pagina
 homeCalculate.addEventListener("click",()=>{
   document.getElementById ("home").style.display="none";
   document.getElementById (" ").style.display="block";
 })
+
 //botton Conoce tus Pokemones
 const BtInicio=document.getElementById("pokemones");//EVENTO PARA entrar a la 2 pagina
 BtInicio.addEventListener("click",()=>{
@@ -53,32 +90,8 @@ BtInicio.addEventListener("click",()=>{
 
 
 
-//mostrar pokemones de A-Z
 
 
-
-
-
-
-/*const sortData = document.getElementById( "orderpokemon" );
-sortData.addEventListener("change",() => {
-  const listenSortBy = sortData.options [sortData.selectedIndex].value; 
-  templateListOfCards(data.sortData(array,parseInt(allThePokemones[0]),parseInt(allThePokemones);
-  return 1;
-})
-*/
-
-
-
-
-
-
-
-/*function selectOrder(){
-  let listOrder= document.getElementById ("orderpokemon").value;
-  document.getElementById("allThePokemones"),innerHTML= crearTemplateDeCard(AOrder);
-  }
-  */
 
 
 
@@ -94,34 +107,7 @@ orderpokemon.addEventListener ( "click", () => {
 
 
 
-/*
-//nombrando menu
-const pagStar= document.getElementById("home");
-const pagPoke= document.getElementById("listdePokemones");
-const pagType= document.getElementById("listdePokemones");
-const pagVs= document.getElementById();
 
-//nombrando id
-const btnStart= document.getElementById("btnStart");
-const btnPoke= document.getElementById("btnOrder");
-const btnType= document.getElementById("btnFilter");
-const btnVs= document.getElementById("btnCalculate");
-
-//creando block a pagina de inicio 
-btnStart.addEventListener("click", () => {
-  pagStar.style.display = "block";
-  pagPoke.style.display = "none";
-  pagType.style.display = "none";
-  pagVs.style.display = "none";
-});
-
-btnPoke.addEventListener("click", () => {
-  pagStar.style.display = "none";
-  pagPoke.style.display = "block";
-  pagType.style.display = "none";
-  pagVs.style.display = "none";
-});  
-*/
 
 // Funcion ORDENAR
 
