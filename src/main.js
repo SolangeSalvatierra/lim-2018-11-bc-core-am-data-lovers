@@ -11,10 +11,10 @@ const template = (list) => {
     const card = `
       <div class="card-link">
         <article class="blog-card">
-          <img class="post-image" src="${ dataPoke.img }" />
-          <h3 class="post-title">${ dataPoke.id }</h3>
+          <img class="post-image" src="${ dataPoke.img}" />
+          <h3 class="post-title">${ dataPoke.id}</h3>
           <div class="article-details">
-            <h4 class="post-category">${ dataPoke.name }</h4>
+            <h4 class="post-category">${ dataPoke.name}</h4>
           </div>
         </article>
       </div>
@@ -26,90 +26,75 @@ const template = (list) => {
 template(dataPoke);
 
 //Funcion de ordenar de A-Z
-const sortBy = document.getElementById ("orderpokemon");
-  sortBy.addEventListener("change",() => {
-     sortBy.options [sortBy.selectedIndex].value;
-    template(sortData(dataPoke,name,0));
-    return 1;
-  });
-
-  /*const sortOrder = document.getElementById ("orderpokemon");
-  sortOrder.addEventListener("change",() => {
-    sortOrder.options [sortOrder.selectedIndex].value; 
-    template (sortData(dataPoke,descendente,0));
-    return -1;
-  });*/
+const sortBy = document.getElementById("orderpokemon");
+sortBy.addEventListener("change", (evt) => {
+  debugger
+  const selectedIndex = evt.currentTarget.selectedIndex;
+  //sortBy.options[sortBy.selectedIndex].value;
+  if (selectedIndex === 1) {
+    template(sortData(dataPoke, 'name', 'asc'));
+  } else if (selectedIndex === 2) {
+    template(sortData(dataPoke, 'name', 'desc'));
+  } else if (selectedIndex === 0) {
+    template(sortData(dataPoke, 'number', "asc"));
+  }
   
- 
+  //return 1;
+});
+
+/*const sortOrder = document.getElementById ("orderpokemon");
+sortOrder.addEventListener("change",() => {
+  sortOrder.options [sortOrder.selectedIndex].value; 
+  template (sortData(dataPoke,name, 1));
+  return 1;
+});*/
+
+
 
 
 
 //funcion mostrar ocultar del nav
-const start=document.getElementById("Start");//EVENTO PARA entrar a la 2 pagina
-start.addEventListener("click",()=>{
-  document.getElementById ("home").style.display="block";
-  document.getElementById ("listdePokemones").style.display="none";
+const start = document.getElementById("Start");//EVENTO PARA entrar a la 2 pagina
+start.addEventListener("click", () => {
+  document.getElementById("home").style.display = "block";
+  document.getElementById("listdePokemones").style.display = "none";
 })
 
 //Nav Start
-const homeStart=document.getElementById("Start");
-homeStart.addEventListener("click",()=>{
-  document.getElementById (" ").style.display="none";
-  document.getElementById ("home").style.display="block";
+const homeStart = document.getElementById("Start");
+homeStart.addEventListener("click", () => {
+  document.getElementById("").style.display = "none";
+  document.getElementById("home").style.display = "block";
 })
 
 //Nav Order
-const homeOrder=document.getElementById("Order");//EVENTO PARA entrar a la 2 pagina
-homeOrder.addEventListener("click",()=>{
-  document.getElementById ("home").style.display="none";
-  document.getElementById ("listdePokemones").style.display="block";
+const homeOrder = document.getElementById("Order");//EVENTO PARA entrar a la 2 pagina
+homeOrder.addEventListener("click", () => {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("listdePokemones").style.display = "block";
 })
 
 //Nav Filter
-const homeFilter=document.getElementById("Filter");//EVENTO PARA entrar a la 3 pagina
-homeFilter.addEventListener("click",()=>{
-  document.getElementById ("home").style.display="none";
-  document.getElementById ("listdePokemones").style.display="block";
+const homeFilter = document.getElementById("Filter");//EVENTO PARA entrar a la 3 pagina
+homeFilter.addEventListener("click", () => {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("listdePokemones").style.display = "block";
 })
 
 //Nav Calculate
-const homeCalculate=document.getElementById("Calculate");//EVENTO PARA entrar a la 4 pagina
-homeCalculate.addEventListener("click",()=>{
-  document.getElementById ("home").style.display="none";
-  document.getElementById (" ").style.display="block";
+const homeCalculate = document.getElementById("Calculate");//EVENTO PARA entrar a la 4 pagina
+homeCalculate.addEventListener("click", () => {
+  document.getElementById("home").style.display = "none";
+  document.getElementById(" ").style.display = "block";
 })
 
 //botton Conoce tus Pokemones
-const BtInicio=document.getElementById("pokemones");//EVENTO PARA entrar a la 2 pagina
-BtInicio.addEventListener("click",()=>{
-  document.getElementById ("home").style.display="none";
-  document.getElementById ("listdePokemones").style.display="block";
+const BtInicio = document.getElementById("pokemones");//EVENTO PARA entrar a la 2 pagina
+BtInicio.addEventListener("click", () => {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("listdePokemones").style.display = "block";
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const orderpokemon= document.getElementById ("allThePokemones");
-orderpokemon.addEventListener ( "click", () => {
-  listpokemon.innerHTML = crearTemplateDeCard(AOrder);
-  });*/
-
-
-
-
-
-
-// Funcion ORDENAR
 
 
 //KYARA
