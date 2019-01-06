@@ -154,13 +154,6 @@ background: #00b7f8;
     
     }
 
-
-
-
-/* cajitas pokemon */
-
-
-
 .listdePokemones {
 padding: 5px 60px 40px 30px;
 margin: 40px 50px 40px 50px;
@@ -182,7 +175,7 @@ margin: 40px 50px 40px 50px;
 
 }
 
-#orderpokemon {
+#orderpokemon, #typepokemon {
        display: flex;
     margin: 100px 100px 100px 450px;
     padding: 10px 20px 5px 20px;
@@ -194,7 +187,7 @@ margin: 40px 50px 40px 50px;
     margin-bottom: 10px;
 }
   }
-  #orderpokemon:hover{
+  #orderpokemon:hover, #typepokemon:hover {
     background: #0096f7;
 }
 

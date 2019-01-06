@@ -23,61 +23,75 @@ const template = (list) => {
 template(dataPoke);
 
 // Mostrar Funcion Sort con Select 
-const sortBy = document.getElementById('orderpokemon');
-sortBy.addEventListener('change', (evt) => {
-  const selectedIndex = evt.currentTarget.selectedIndex;
+const sortBy = document.getElementById('orderpokemon').addEventListener('change', (evt) => {
+const selectedIndex = evt.currentTarget.selectedIndex;
   // sortBy.options[sortBy.selectedIndex].value;
-  if (selectedIndex === 2) {
+  if (selectedIndex === 3) {
     template(POKE.sortData(dataPoke, 'name', 'A-Z'));
-  } else if (selectedIndex === 3) {
+  } else if (selectedIndex === 4) {
     template(POKE.sortData(dataPoke, 'name', 'Z-A'));
-  } else if (selectedIndex === 1) {
+  } else if (selectedIndex === 2) {
     template(POKE.sortData(dataPoke, 'number', 'asc'));
-  } else if (selectedIndex === 0) {
+  } else if (selectedIndex === 1) {
     template(POKE.sortData(dataPoke, 'number', 'des'));
   } 
 });
 
-// funcion mostrar ocultar del nav
-const start = document.getElementById('Start');// EVENTO PARA entrar a la 2 pagina
-start.addEventListener('click', () => {
+/*// Mostrar Funcion Filter con Select 
+const condition = document.getElementById('typepokemon').addEventListener('change', (evt) => {
+const selectedIndex = evt.currentTarget.selectedIndex;
+  if (selectedIndex === 3) {
+    template(POKE.filterData(dataPoke, 'name', 'A-Z'));
+  } else if (selectedIndex === 4) {
+    template(POKE.filterData(dataPoke, 'name', 'Z-A'));
+  } else if (selectedIndex === 2) {
+    template(POKE.filterData(dataPoke, 'number', 'asc'));
+  } else if (selectedIndex === 1) {
+    template(POKE.filterData(dataPoke, 'number', 'des'));
+  } 
+});*/
+
+
+
+
+// Nav Inicio
+  document.getElementById('Start').addEventListener('click', () => {
   document.getElementById('home').style.display = 'block';
   document.getElementById('listdePokemones').style.display = 'none';
-});
-
-// Nav Start
-const homeStart = document.getElementById('Start');
-homeStart.addEventListener('click', () => {
-  document.getElementById('').style.display = 'none';
-  document.getElementById('home').style.display = 'block';
+  document.getElementById('listCalculate').style.display = 'none'; 
 });
 
 // Nav Order
-const homeOrder = document.getElementById('Order');// EVENTO PARA entrar a la 2 pagina
-homeOrder.addEventListener('click', () => {
-  document.getElementById('home').style.display = 'none';
+  document.getElementById('Order').addEventListener('click', () => {
   document.getElementById('listdePokemones').style.display = 'block';
+  document.getElementById('orderpokemon').style.display = 'block';
+  document.getElementById('home').style.display = 'none';
+  document.getElementById('typepokemon').style.display = 'none';
+  document.getElementById('listCalculate').style.display = 'none'; 
 });
 
 // Nav Filter
-const homeFilter = document.getElementById('Filter');// EVENTO PARA entrar a la 3 pagina
-homeFilter.addEventListener('click', () => {
-  document.getElementById('home').style.display = 'none';
+  document.getElementById('Filter').addEventListener('click', () => {
   document.getElementById('listdePokemones').style.display = 'block';
+  document.getElementById('typepokemon').style.display = 'block';
+  document.getElementById('home').style.display = 'none';
+  document.getElementById('orderpokemon').style.display = 'none';
+  document.getElementById('listCalculate').style.display = 'none'; 
 });
 
 // Nav Calculate
-const homeCalculate = document.getElementById('Calculate');// EVENTO PARA entrar a la 4 pagina
-homeCalculate.addEventListener('click', () => {
+  document.getElementById('Calculate').addEventListener('click', () => {
+  document.getElementById('listCalcuPoke').style.display = 'block';
   document.getElementById('home').style.display = 'none';
-  document.getElementById(' ').style.display = 'block';
+  document.getElementById('listdePokemones').style.display = 'none';
 });
 
 // botton Conoce tus Pokemones
-const BtInicio = document.getElementById('pokemones');// EVENTO PARA entrar a la 2 pagina
-BtInicio.addEventListener('click', () => {
-  document.getElementById('home').style.display = 'none';
+  document.getElementById('pokemones').addEventListener('click', () => {
   document.getElementById('listdePokemones').style.display = 'block';
+  document.getElementById('home').style.display = 'none';
+  document.getElementById('typepokemon').style.display = 'none';
+  document.getElementById('listCalculate').style.display = 'none'; 
 });
 
 /* const almuerzo = [
