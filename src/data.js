@@ -42,28 +42,20 @@ const sortData = (data, sortBy, sortOrder) => {
   return arrOrder;
 };
 
-/*const filterData = (data, condition) => {
-  let arrType = [];
-  for (let i = 0; i < data.length; i++) {
-    for (let x = 0; x < data[i].type.length; x++)
-      if (data[i].type[x] === condition) {
-        arrType.push(data[i], data[i].name, data[i].id);
-      }
-  }
-  return arrType;
-};*/
- 
 const filterData = (data, condition) => {
   let arrType = [];
   for (let i = 0; i < data.length; i++) {
-    for (let j = 0; j < data[i].type.length; j++) {
-      if (data [i].type[j] === condition) {
+    for (let x = 0; x < data[i].type.length; x++) {
+      if (data[i].type[x] === condition) {
+        /*arrType.push(data[i], data[i].name, data[i].id);*/
         arrType.push(data[i]);
       }
-    }
+    }  
   }
   return arrType;
 };
+ 
+
 
 window.POKE = {
   sortData,
