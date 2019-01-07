@@ -24,8 +24,8 @@ const template = (list) => {
 template(dataPoke);
 
 // Mostrar Funcion Sort con Select 
-const sortBy = document.getElementById('orderpokemon').addEventListener('change', (evt) => {
-const selectedIndex = evt.currentTarget.selectedIndex;
+document.getElementById('orderpokemon').addEventListener('change', (evt) => {
+  const selectedIndex = evt.currentTarget.selectedIndex;
   // sortBy.options[sortBy.selectedIndex].value;
   if (selectedIndex === 3) {
     template(POKE.sortData(dataPoke, 'name', 'A-Z'));
@@ -39,10 +39,10 @@ const selectedIndex = evt.currentTarget.selectedIndex;
 });
 
 // Mostrar Funcion Filter con Select 
-const condition = document.getElementById('typepokemon').addEventListener('change', (evt) => {
-const selectedIndex = evt.currentTarget.selectedIndex;
+document.getElementById('typepokemon').addEventListener('change', (evt) => {
+  const selectedIndex = evt.currentTarget.selectedIndex;
   if (selectedIndex === 1) {
-    template(POKE.filterData(dataPoke, 'Water' ));
+    template(POKE.filterData(dataPoke, 'Water'));
   } else if (selectedIndex === 2) {
     template(POKE.filterData(dataPoke, 'Bug'));
   } else if (selectedIndex === 3) {
@@ -76,14 +76,14 @@ const selectedIndex = evt.currentTarget.selectedIndex;
 
 
 // Nav Inicio
-  document.getElementById('Start').addEventListener('click', () => {
+document.getElementById('Start').addEventListener('click', () => {
   document.getElementById('home').style.display = 'block';
   document.getElementById('listdePokemones').style.display = 'none';
   document.getElementById('listCalcuPoke').style.display = 'none'; 
 });
 
 // Nav Order
-  document.getElementById('Order').addEventListener('click', () => {
+document.getElementById('Order').addEventListener('click', () => {
   document.getElementById('listdePokemones').style.display = 'block';
   document.getElementById('orderpokemon').style.display = 'block';
   document.getElementById('home').style.display = 'none';
@@ -92,7 +92,7 @@ const selectedIndex = evt.currentTarget.selectedIndex;
 });
 
 // Nav Filter
-  document.getElementById('Filter').addEventListener('click', () => {
+document.getElementById('Filter').addEventListener('click', () => {
   document.getElementById('listdePokemones').style.display = 'block';
   document.getElementById('typepokemon').style.display = 'block';
   document.getElementById('home').style.display = 'none';
@@ -101,53 +101,16 @@ const selectedIndex = evt.currentTarget.selectedIndex;
 });
 
 // Nav Calculate
-  document.getElementById('Calculate').addEventListener('click', () => {
+document.getElementById('Calculate').addEventListener('click', () => {
   document.getElementById('listCalcuPoke').style.display = 'block';
   document.getElementById('home').style.display = 'none';
   document.getElementById('listdePokemones').style.display = 'none';
 });
 
 // botton Conoce tus Pokemones
-  document.getElementById('pokemones').addEventListener('click', () => {
+document.getElementById('pokemones').addEventListener('click', () => {
   document.getElementById('listdePokemones').style.display = 'block';
   document.getElementById('home').style.display = 'none';
   document.getElementById('typepokemon').style.display = 'none';
   document.getElementById('listCalcuPoke').style.display = 'none'; 
 });
-
-/* const almuerzo = [
- {principal: 'arepa', postre: 'helado'},
- {principal: 'taco', postre: 'torta de queso'},
- {principal: 'pizza', postre: 'galletas'},
- {principal: 'sushi', postre: 'quesillo'},
-];
-
-const platosPrincipales = [];
-for (let i = 0; i < almuerzo.length; i++) {
-platosPrincipales.push(almuerzo[i].principal);
-    
-}
-console.log(platosPrincipales);*/
-/* const containerType = document.getElementById('contType');
-containerType.addEventListener('click', (e) => {
- containerList.innerHTML = templateCard(filterData(arrPokemon, e.target.getAttribute('value')));
-});
-
-var listPokemon = POKEMON.pokemon ;
-var typePoison = [];
-for (let i = 0; i < listPokemon.length; i++){
- for(let x =0; x < listPokemon[i].type.length; x++)
- if(listPokemon[i].type[x] === 'Water'){
-   typePoison.push(listPokemon[i].type)
- }
-
-}
-console.log(typePoison);*/
-
-/* const contenedor = document.getElementById('lista-por-tipo');
-const listaTipo = document.getElementById('listTipoPoke');
-listaTipo.addEventListener('onchange', (e) =>{
-
-	contenedor.innerHTML = filterData(listPokemon, e.target.getAttribute('value'));
-});
-//KYARA */
