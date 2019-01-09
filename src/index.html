@@ -6,21 +6,24 @@
   <title>Pokemon Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts.css"/>
 </head>
 
 <body>
   <!--Navegador-->
-
-  <header class="header2">
+  <header>  
     <div class="wrapper">
       <div>
         <img src="ima/logoNombre.png" id="imagenLogo">
       </div>
+      <input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar">
+			</label>
       <nav class="menu">
-        <a href="#" id="Start"> Inicio </a>
-        <a href="#" id="Order"> Pokemones </a>
-        <a href="#" id="Filter"> Tipos </a>
-        <a href="#" id="Calculate"> Vs </a>
+        <a href="#" id="Start" class="icon-home3"> Inicio </a>
+        <a href="#" id="Order" class="icon-search"> Buscar </a>
+        <a href="#" id="Filter" class="icon-filter"> Filtrar </a>
+        <a href="#" id="Calculate" class="icon-star-empty"> VS </a>
       </nav>
     </div>
   </header>
@@ -57,7 +60,6 @@
   <!--<SEGUNDA SECCION-->
 <div id="listdePokemones">
   <div id="listOrderPoke">
-    <section class="Content">
       <select id="orderpokemon" class="type-select">
         <option > Ordenar por ...</option>
         <option value="00"> N° Descendente </option>
@@ -65,7 +67,6 @@
         <option value="02"> A - Z </option>
         <option value="03"> Z - A </option>
       </select>
-    </section>
   </div>
   <!-- Listado de pokemones por tipo -->
   <div id="listTypePoke">
@@ -87,17 +88,15 @@
       <option value="13">Veneno</option>
       <option value="14">Volador</option>
     </select>
-    <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
-    <div id="allThePokemones"> </div>
+    <div id="allThePokemones">
+     <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+    </div>
   </div>
 </div>
 <div id="listCalcuPoke">
    <section class="Content">
-
    </section>
 </div>
-
-
   <!--AVERIGUAR QUE ES
     <div id="root"></div>-->
 
@@ -107,4 +106,4 @@
   <p class="footer"> Created by Kyara Bahamonde ® y Solange Salvatierra ® </p>
 </body>
 
-</html>
+</html>   
