@@ -20,43 +20,65 @@
 			<label class="icon-menu" for="menu-bar">
 			</label>
       <nav class="menu">
-        <a href="#" id="Start" class="icon-home3"> Inicio </a>
-        <a href="#" id="Order" class="icon-search"> Buscar </a>
-        <a href="#" id="Filter" class="icon-filter"> Filtrar </a>
-        <a href="#" id="Calculate" class="icon-star-empty"> VS </a>
+        <a href="#" id="Start" class="icon-home"> &nbspInicio </a>
+        <a href="#" id="Order" class="icon-search"> &nbspPokemones </a>
+        <a href="#" id="Filter" class="icon-filter"> &nbspFiltrar </a>
+        <a href="#" id="Calculate" class="icon-star-empty"> &nbspCalcula % </a>
       </nav>
     </div>
   </header>
   <div id="home">
     <!--slider de imagenes-->
-    <div class="slider">
-      <ul>
-        <li><img src="ima/slider1.jpg"></li>
-        <li><img src="ima/slider2.jpg"></li>
-        <li><img src="ima/slider3.jpg"></li>
-        <li><img src="ima/slider5.jpg"></li>
-        <li><img src="ima/slider4.jpg"></li>
-      </ul>
-    </div>
+    
+      <div id="contenedorSlider">
+        <div class="slider">
+
+          <img class="mySlides" src="ima/slider4.jpg" style="max-width: 70%">
+          <img class="mySlides" src="ima/slider1.jpg" style="max-width: 70%">
+          <img class="mySlides" src="ima/slider3.jpg" style="max-width: 70%">
+          <img class="mySlides" src="ima/slider2.jpg" style="max-width: 70%">
+          <img class="mySlides" src="ima/slider5.jpg" style=" max-width: 70%">
+        </div>
+      </div>
+    
+
     <div>
-      <button id="pokemones"> Conoce tus pokemones </button>
+      <button id="pokemones"class="pokemones"> Conoce tus pokemones </button>
     </div>
     <!--div de informacion-->
-    <div class="history">
-      <section class="Introduction">
-        <p>QUE ES POKEMON GO: DEFINICION
-          Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS
-          y Android.
-
-          El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en
-          buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de
-          interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus
-          poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo.
+    <div class="welcome">
+      <h1>Aventuras con tu compañero Pokemon</h1>
+      <p>
+        ¡Bienvenido al Pokédex GO de FG! ¡Aquí hemos catalogado una gran variedad de información sobre cada Pokémon
+        para ayudarlo
+        en sus viajes! Este es un proyecto en curso y se actualiza con frecuencia</p>
+    </div>
+    <!--Seccion de Botones-->
+    <div>
+      <button type="button" class="pokemones" id="mostrar-inf"> ¿Qué es Pokemon Go? </button>
+    </div>
+    <!--Div de informacion sobre Pokemon Go-->
+    <div id="information">
+      <div class="contenedorInf">
+        <p>
+          <b>QUE ES POKEMON GO: DEFINICION</b>
         </p>
-      </section>
+        <p> Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos
+          iOS y Android.</p>
+
+        <p>El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en
+          buscar, capturar, y luchar con los personajes de la saga Pokémon.</p>
+        <p> La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios
+          en distintas ubicaciones de sus poblaciones.
+        </p>
+        <p> El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo.</p>
+
+      </div>
+
+      <img src="ima/jj.jpg" class="imgInf">
+      <a href="" class="btn-inf" id="ocultar-inf">Volver</a>
     </div>
   </div>
-
   <!--<SEGUNDA SECCION-->
 <div id="listdePokemones">
   <div id="listOrderPoke">
@@ -88,22 +110,54 @@
       <option value="13">Veneno</option>
       <option value="14">Volador</option>
     </select>
-    <div id="allThePokemones">
-     <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
-    </div>
+         <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+    <div id="allThePokemones">  </div>
   </div>
 </div>
 <div id="listCalcuPoke">
-   <section class="Content">
-   </section>
+    <div>
+        <ul>
+          <li class="list-pokemon-tipos">Agua</li>
+          <li>Bicho</li>
+          <li>Dragon</li>
+          <li>Electrico</li>
+          <li>Fantasma</li>
+          <li>Fuego</li>
+          <li>Hielo</li>
+          <li>Lucha</li>
+          <li>Normal</li>
+          <li>Hierba</li>
+          <li>Psiquico</li>
+          <li>Roca</li>
+          <li>Tierra</li>
+          <li>Veneno</li>
+          <li>Volador</li>
+        </ul>
+      </div>
+
+    <div id="list-calculo">
+
+    </div>
+
+
 </div>
+
+<!--footer -->
+<footer>
+  <div class="txt-footer">
+    <p> Created by Bahamonde® & Salvatierra ® </p>
+    <div class="iconSocial">
+      <a href="https://www.facebook.com/PokemonGO/" class="icon-facebook2"></a>
+      <a href="https://www.instagram.com/pokemongoapp/?hl=es-la" class="icon-instagram"></a>
+      <a href="https://twitter.com/pokemongoapp" class="icon-twitter"></a>
+    </div>
+  </div>
+</footer>
   <!--AVERIGUAR QUE ES
     <div id="root"></div>-->
-
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-  <p class="footer"> Created by Kyara Bahamonde ® y Solange Salvatierra ® </p>
 </body>
 
 </html>   

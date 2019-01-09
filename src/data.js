@@ -47,15 +47,43 @@ const filterData = (data, condition) => {
   for (let i = 0; i < data.length; i++) {
     for (let x = 0; x < data[i].type.length; x++) {
       if (data[i].type[x] === condition) {
-        /* arrType.push(data[i], data[i].name, data[i].id);*/
         arrType.push(data[i]);
       }
     }  
   }
   return arrType;
 };
- 
+
+/* const computeStats = (data, typePoke) => {
+  let tipoPorcen = [];
+  for (let i = 0; i < data.length; i++) {
+    for (let x = 0; x < data[i].type.length; x++) {
+      if (data[i].type[x] === typePoke) {
+        tipoPorcen.push(data[i] / 151 * 100).toFixed(2);
+      }
+    }
+  }
+  return (tipoPorcen + '%');
+};*/
+
+/* const computeStats = (data, typePoke) => {
+let tipoPorcen = [];
+  for (let i = 0; i < data.length; i++) {
+    for (let x = 0; x < data[i].type.length; x++) {
+      if(data[i].type[x] === typePoke){
+  tipoPorcen.push(data[i].type)
+}
+var cantPoke = ((tipoPorcen.length)/151*100).toFixed(2);
+
+}
+return(cantPoke + "%")
+}
+console.log(computeStats(data,"Poison")) */
+
+
+
 window.POKE = {
   sortData,
   filterData,
+  /*computeStats,*/
 };
