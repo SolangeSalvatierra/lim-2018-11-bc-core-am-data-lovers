@@ -114,6 +114,18 @@ document.getElementById('mostrar-inf').addEventListener('click', () => {
 // botton Conoce tus Pokemones
 document.getElementById('pokemones').addEventListener('click', () => {  
   document.getElementById('listdePokemones').style.display = 'block';
+  document.getElementById('home').style.display = 'none';
+  document.getElementById('typepokemon').style.display = 'none';
+  document.getElementById('listCalcuPoke').style.display = 'none'; 
+});
+
+
+
+let myIndex = 0;
+carousel();
+
+function carousel() {
+  let i;
   let x = document.getElementsByClassName('mySlides');
   for (i = 0; i < x.length; i++) {
     x[i].style.display = 'none';  
@@ -122,4 +134,4 @@ document.getElementById('pokemones').addEventListener('click', () => {
   if (myIndex > x.length) {myIndex = 1}   
   x[myIndex - 1].style.display = 'block' ;  
   setTimeout(carousel, 2000); // cambio a 5 segundos
-});
+}

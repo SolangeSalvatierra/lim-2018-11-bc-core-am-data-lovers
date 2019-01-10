@@ -1,18 +1,11 @@
 @font-face {
   font-family: 'icomoon';
-<<<<<<< HEAD
   src:  url('fonts/icomoon.eot?eqz8e9');
   src:  url('fonts/icomoon.eot?eqz8e9#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?eqz8e9') format('truetype'),
     url('fonts/icomoon.woff?eqz8e9') format('woff'),
     url('fonts/icomoon.svg?eqz8e9#icomoon') format('svg');
-=======
-  src:  url('fonts/icomoon.eot?82721x');
-  src:  url('fonts/icomoon.eot?82721x#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?82721x') format('truetype'),
-    url('fonts/icomoon.woff?82721x') format('woff'),
-    url('fonts/icomoon.svg?82721x#icomoon') format('svg');
->>>>>>> d7262d090c79c563af2dce2ecac13eb5a6f27bae
+
   font-weight: normal;
   font-style: normal;
 }
@@ -32,11 +25,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-<<<<<<< HEAD
 .icon-home:before {
-=======
-.icon-home3:before {
->>>>>>> d7262d090c79c563af2dce2ecac13eb5a6f27bae
   content: "\e902";
 }
 .icon-search:before {
@@ -54,12 +43,11 @@
 .icon-facebook2:before {
   content: "\ea91";
 }
-<<<<<<< HEAD
+
 .icon-instagram:before {
   content: "\ea92";
 }
 .icon-twitter:before {
   content: "\ea96";
 }
-=======
->>>>>>> d7262d090c79c563af2dce2ecac13eb5a6f27bae
+
