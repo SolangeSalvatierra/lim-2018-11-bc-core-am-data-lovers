@@ -54,36 +54,20 @@ const filterData = (data, condition) => {
   return arrType;
 };
 
-/* const computeStats = (data, typePoke) => {
+const computeStats = (data, typePoke) => {
   let tipoPorcen = [];
   for (let i = 0; i < data.length; i++) {
     for (let x = 0; x < data[i].type.length; x++) {
       if (data[i].type[x] === typePoke) {
-        tipoPorcen.push(data[i] / 151 * 100).toFixed(2);
+        tipoPorcen.push(data[i].type[x]);
       }
     }
   }
-  return (tipoPorcen + '%');
-};*/
-
-/* const computeStats = (data, typePoke) => {
-let tipoPorcen = [];
-  for (let i = 0; i < data.length; i++) {
-    for (let x = 0; x < data[i].type.length; x++) {
-      if(data[i].type[x] === typePoke){
-  tipoPorcen.push(data[i].type)
-}
-var cantPoke = ((tipoPorcen.length)/151*100).toFixed(2);
-
-}
-return(cantPoke + "%")
-}
-console.log(computeStats(data,"Poison")) */
-
-
+  return ('El porcentaje del pokemon de tipo ' + typePoke + ' es: ' + ((tipoPorcen.length) / 151 * 100).toFixed(2) + '%');
+};
 
 window.POKE = {
   sortData,
   filterData,
-  /*computeStats,*/
+  computeStats,
 };

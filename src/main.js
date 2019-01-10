@@ -74,6 +74,11 @@ document.getElementById('typepokemon').addEventListener('change', (evt) => {
   } 
 });
 
+// Mostrar Funcion Calculo con Ul / li 
+const containerCalcu = document.getElementById('cont-tipos');
+containerCalcu.addEventListener('click', (event) => { 
+  document.getElementById('list-calculo').innerHTML = (window.POKE.computeStats(dataPoke, event.target.getAttribute('value')));
+});
 
 // Nav Inicio
 document.getElementById('Start').addEventListener('click', () => {
@@ -98,6 +103,7 @@ document.getElementById('Filter').addEventListener('click', () => {
   document.getElementById('home').style.display = 'none';
   document.getElementById('orderpokemon').style.display = 'none';
   document.getElementById('listCalcuPoke').style.display = 'none'; 
+});
 
 // Nav Calculate
 document.getElementById('Calculate').addEventListener('click', () => {
@@ -119,8 +125,6 @@ document.getElementById('pokemones').addEventListener('click', () => {
   document.getElementById('listCalcuPoke').style.display = 'none'; 
 });
 
-
-
 let myIndex = 0;
 carousel();
 
@@ -131,7 +135,9 @@ function carousel() {
     x[i].style.display = 'none';  
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}   
+  if (myIndex > x.length) {
+    myIndex = '1';
+  } 
   x[myIndex - 1].style.display = 'block' ;  
   setTimeout(carousel, 2000); // cambio a 5 segundos
 }
