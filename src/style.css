@@ -74,10 +74,7 @@ header nav a:hover {
     border-radius: 50px;
     }
 
-
-
 img {
-
       float:left;
 }       
 
@@ -120,44 +117,6 @@ header .contendedor{
         color:blue;
         border-radius: 50px;
         }   
-
-/*
-.slider{
-    max-width: 100%;
-   margin: auto;
-   overflow:hidden;
-   padding: 90px 0px 0px 60px;
-      
-}
-.slider ul{
-    display: flex; 
-    animation: cambio 10s infinite alternate ease; 
-    width: 500%;
-}
-.slider li{
-    list-style: none;
-}
-.slider img {
-max-width: 100%;
-
-margin: 5px auto;
-padding: 5px 5px;
-}
-
-@keyframes cambio {
-    0% { margin-left: 0; }
-    20% { margin-left: 0 }
-    
-    25% { margin-left: -10%; }
-    45% { margin-left: -100%; }
-
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-    
-    75% { margin-left: -300%; }
-    100% { margin-left: -300%; }
-}
-*/
 
 .mySlides {display:none;}
 

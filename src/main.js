@@ -98,7 +98,6 @@ document.getElementById('Filter').addEventListener('click', () => {
   document.getElementById('home').style.display = 'none';
   document.getElementById('orderpokemon').style.display = 'none';
   document.getElementById('listCalcuPoke').style.display = 'none'; 
-});
 
 // Nav Calculate
 document.getElementById('Calculate').addEventListener('click', () => {
