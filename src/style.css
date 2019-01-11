@@ -22,7 +22,7 @@
 body {
     background-image: url(ima/fondo.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-atachment: fixed;
     background-position: center;
 	font-family: "Lato",sans-serif;
 }
@@ -124,6 +124,7 @@ header .contendedor{
 .mySlides {display:none;}
 
 .slider{
+    margin-left: 25%;
     padding-top: 110px;
     position:center;
     overflow:hidden;	 
@@ -261,7 +262,7 @@ header .contendedor{
 .tipo {
         display: inline-block;
         background: #0047fe;
-        border-radius: 12px;
+        border-radius: 10px;
         box-shadow: 1px 1px 1px #999;
         color: #fefe9e;
         cursor: pointer;
@@ -296,16 +297,7 @@ header .contendedor{
         text-decoration: none;
       }
 
-#list-calculo{
-    font-family: sans-serif;
-    width: 70%;
-    height: 400px;
-    background: #fff;
-    margin-top: 50px;
-    margin-left: 110px;
-    margin-bottom: 50px;
-    border-style: outset;
-}
+
 
 footer{
     background:red;
@@ -328,6 +320,30 @@ a{
 	color: #fff;
 }
 
+.contListCalc{
+    background-image: url(ima/TipoPorcentaje.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+    border-style: outset;
+}
+
+#list-calculo{
+    position: center; 
+    background-color: rgb(037, 040, 080,0.9); 
+    font-family: 'Raleway', Arial, Helvetica;
+    font-size: 250%;
+    padding: 20px;
+    text-align: center; 
+    color: #fff;
+    border-radius: 10px;
+
+       
+    
+}
 @media screen and (max-width: 600px)
 {
 
