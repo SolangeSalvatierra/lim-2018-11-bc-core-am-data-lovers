@@ -47,7 +47,7 @@ const filterData = (data, condition) => {
   for (let i = 0; i < data.length; i++) {
     for (let x = 0; x < data[i].type.length; x++) {
       if (data[i].type[x] === condition) {
-        arrType.push(data[i]);
+        arrType.push(data[i]);  
       }
     }  
   }
@@ -63,7 +63,7 @@ const computeStats = (data, typePoke) => {
       }
     }
   }
-  return ('El porcentaje del pokemon de tipo ' + typePoke + ' es: ' + ((tipoPorcen.length) / 151 * 100).toFixed(2) + '%');
+  return ('El porcentaje del pokemon de tipo ' + typePoke + ' es: ' + ((tipoPorcen.length) / 151 * 100).toFixed(2).bold() + '%');
 };
 
 window.POKE = {
