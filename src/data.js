@@ -1,10 +1,3 @@
-/* let listpokemon = POKEMON.pokemon;
-let pokemon = JSON.stringify (listpokemon);
-document.getElementById ("list-pokemones").innerHTML = pokemon; */
-
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
 const sortData = (data, sortBy, sortOrder) => {
   let arrOrder = [];
   /* ordenado alfabeticamente */

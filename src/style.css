@@ -2,6 +2,10 @@
     margin:0; 
     padding:0;
     }
+.menu{
+    font-family: 'Open Sans', sans-serif;
+}
+
 #listdePokemones{
     display:none;
 }
@@ -19,13 +23,8 @@
     height: 85px;
     }
     
-#home {
-    background-image: url(ima/poke.jpg);
-    background-size: cover;
-    background-position: center;
-	font-family: "Lato",sans-serif;
-}
-#imagenLogo{
+
+#imagen-logo{
     max-width: 150%;
     max-height: 80px;
     float: left;
@@ -63,9 +62,9 @@ header .contendedor{
     }
 
     header nav {
-        float : right;
-        line-height:65px;
-        padding: 20px 20px 0px 0px;
+        float: right;
+        line-height: 55px;
+        padding: 15px 30px 0px 0px;
         }
     header nav a  {
         display: inline-block;
@@ -73,7 +72,7 @@ header .contendedor{
         text-decoration: none;
         padding: 10px 10px;
         line-height: normal;
-        font-size: 20px;
+        font-size: 22px;
         font-weight:bold;
         -transition:all 500ms ease;
         -o-transition: all 500ms ease;
@@ -102,7 +101,7 @@ header .contendedor{
     color: #fefe9e;
     cursor: pointer;
     display: block;
-    font-family: 'Raleway', Arial, Helvetica;
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     margin: 20px auto;
     padding: 10px 45px;
@@ -127,7 +126,7 @@ header .contendedor{
     color: #fefe9e;
     cursor: pointer;
     float: left;
-    font-family: 'Raleway', Arial, Helvetica;
+    font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 15px;
     text-align: center;
@@ -139,8 +138,15 @@ header .contendedor{
     color:#0b2d55;
 }
 
+#home {
+    background-image: url(ima/poke.jpg);
+    background-size: cover;
+    background-position: center;
+	font-family:'Open Sans', sans-serif;
+
+}
 .welcome{
-    background: rgba(154,205,50,0.9);
+    background: rgba(255,65,0,0.9);
     padding:20px;
     font-size: 16px;
     text-align: center;
@@ -163,7 +169,7 @@ header .contendedor{
     font-size: 20px;
     width: 400px;
     height: 400px;
-    text-align: justify;
+
 }
 
 .imgInf{
@@ -185,9 +191,10 @@ header .contendedor{
     padding: 10px 40px 10px 30px;
     margin-bottom: 10px;
     align-content: center;
+    font-size: 18px;
 }
   #orderpokemon:hover, #typepokemon:hover {
-    background: rgb(0,0,205);
+    background: rgb(35,95,190);
 }
 
 #allThePokemones {
@@ -250,11 +257,15 @@ header .contendedor{
         display: inline-block;
         width: 15%;
         padding: 5px;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
         margin: 5px;
-        background: rgb(0,0,205);
+        background: rgb(35,95,190);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.16);
         border-radius: 5px;
         text-align: center;
         text-decoration: none;
+        
     }
 
 
@@ -278,7 +289,8 @@ footer{
 }
 a{
 	text-decoration: none;
-	font-size: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 	color: #fff;
 }
 
@@ -320,11 +332,11 @@ a{
 }
 
 #listdePokemones{
-    background-image: url(ima/illustration.jpg);
-    background-size: center;
-    background-size: 100%;
+    background-image: url(ima/fondo2.jpg);
+    background-size: cover;
+    position: center;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 #respuestas{
     margin: 0;
