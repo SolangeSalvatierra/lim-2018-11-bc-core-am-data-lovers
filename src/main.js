@@ -77,7 +77,7 @@ document.getElementById('typepokemon').addEventListener('change', (evt) => {
 // Mostrar Funcion Calculo con Ul / li 
 const containerCalcu = document.getElementById('cont-tipos');
 containerCalcu.addEventListener('click', (event) => { 
-  document.getElementById('list-calculo').innerHTML = (window.POKE.computeStats(dataPoke, event.target.getAttribute('value')));
+  document.getElementById('respuestas').innerHTML = (window.POKE.computeStats(dataPoke, event.target.getAttribute('value')));
 });
 
 // Nav Inicio
