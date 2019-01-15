@@ -124,17 +124,17 @@ PROTOTIPO DE BAJA FIDELIDAD
 
 Nuestras primeras maquetas la trabajamos en baja fidelidad, teniendo en cuenta  las 4 historias de USUARIO, en las cuales identificamos nuestro sistema de flujo. Nuestra primera historia, es "mostrar todos los pokemones" de esta forma continuamos trabajando con nuestra segunda historia que se basaba en "ordenar alfabeticamente,descendente y ascendente", la tercera historia "filtrado por tipos" y por ultimo la cuarta historia  se trata de poder "calcular el porcentaje de Pokemones según su tipo", para poder obtener mayor información de cuantos  Pokemones de cada tipo tenemos.
 
-![sprint](src/ima/prototipo1.jpg)
+<img src="https://user-images.githubusercontent.com/45084376/51190447-3a200b00-18b0-11e9-91a9-09b79ed17582.JPG.jpg"> 
 
-![sprint](src/ima/prototipo2.jpg) 
+<img src="https://user-images.githubusercontent.com/45084376/51190449-3ab8a180-18b0-11e9-9991-c40422a6759e.JPG"> 
 
-![sprint](src/ima/prototipo3.jpg)
+<img src="https://user-images.githubusercontent.com/45084376/51190450-3ab8a180-18b0-11e9-9772-178505fae641.JPG"> 
 
-![sprint](src/ima/prototipo4.jpg)
+<img src="https://user-images.githubusercontent.com/45084376/51190453-3ab8a180-18b0-11e9-9dc3-73b5dfa0f64c.JPG"> 
 
-![sprint](src/ima/prototipo5.jpg)
+<img src="https://user-images.githubusercontent.com/45084376/51190454-3b513800-18b0-11e9-8aa2-ab9efd80e3d3.JPG"> 
 
-![sprint](src/ima/prototipo6.jpg)
+<img src="https://user-images.githubusercontent.com/45084376/51190455-3b513800-18b0-11e9-8306-d4d9b016cb33.JPG"> 
 
 PROTOTIPO DE ALTA FIDELIDAD
 
