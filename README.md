@@ -32,9 +32,13 @@ Formulamos las siguientes preguntas:
 * ¿Cómo te gustaría ordenar tu librería de pokemones?
 * ¿Si te dieran la opción de adicionar algo a tu librería que es lo que te gustaría?
     - Algunas de nuestras entrevistas 
+
 ![sprint](src/ima/entre1.jpg)
+
 ![sprint](src/ima/entre2.jpg)
+
 ![sprint](src/ima/entre3.jpg)
+
 ![sprint](src/ima/entre4.jpg)
 
 Como verán en las imágenes, cada usuario tenía una idea diferente como también tenían necesidades en común. Gracias a la entrevista y a cada usuario logramos obtener 4 historias definidas, las cuales nos ayudaron a obtener una mejor visión de nuestro proyecto.
@@ -121,16 +125,22 @@ PROTOTIPO DE BAJA FIDELIDAD
 Nuestras primeras maquetas la trabajamos en baja fidelidad, teniendo en cuenta  las 4 historias de USUARIO, en las cuales identificamos nuestro sistema de flujo. Nuestra primera historia ………… , es mostrar todos los pokemones de esa forma continuamos trabajando con nuestra segunda historia que se basaba en ordenar ………………,  la tercera historia filtrado por tipos ……………. Y por ultimo nuestra ultima historia  se trata de poder calcular el porcentaje de Pokemones según su tipo, para poder obtener mayor información de cuantos  Pokemones de cada tipo tenemos.
 
 ![sprint](src/ima/IMG_5124.jpg)
+
 ![sprint](src/ima/IMG_5125.jpg) 
+
 ![sprint](src/ima/IMG_5126.jpg)
+
 ![sprint](src/ima/IMG_5127.jpg)
+
 ![sprint](src/ima/IMG_5128.jpg)
+
 ![sprint](src/ima/IMG_5130.jpg)
 
 PROTOTIPO DE ALTA FIDELIDAD
 Para continuar con nuestro Proyecto,mostramos nuestro trabajo a nuestras compañeras, y con nuestro Squad, en donde obtuvimos muchos feetback  de fuentes de letra, posiciones, imágenes, en pocas palabras estilos, de esa forma  obtuvimos  nuestra segunda maqueta, y pasamos a realizar  el Figma y Zeplin, gracias a cada feetback logramos obtener una mejor versión.
 
 ![sprint](src/ima/cel.jpg)
+
 \* Puedes encontrarlo en este  [link]
 (https://www.figma.com/proto/N7gOSGXweECTVuD3637hsUJr/POKEMON?node-id=0%3A1&scaling=scale-down&redirected=1).
 
@@ -138,7 +148,6 @@ Para continuar con nuestro Proyecto,mostramos nuestro trabajo a nuestras compañ
 El proceso de nuestro proyecto al comienzo fue de aprendizaje, vimos más del juego ya que una de nosotras no había jugado para nada el juego, conocimos más de nosotras mismas, entre otras cosas. Sin embargo, no fue tan fácil no saber por dónde comenzar, como verán comenzamos con la maqueta y por ello comenzamos con CSS y HTML. Sin embargo, nos dimos cuenta en nuestro segundo SPRINT que debíamos comenzar con JS (funcionalidades). Realmente nos bloqueamos por casi una semana, pero logramos obtener nuestros primeros resultados en consola. Teníamos resultados muy lentos, hasta que con ayuda y motivación de Diegoy los Couches, logramos avanzar un 70% mas rápido, obteniendo resultado y sobre todo aprendiendo cada vez más.
 Una de las mejores experiencias que ambas tenemos es la hermosa sensación de que un código o interfaz nos salga como planeemos, incluso logramos mejorar nuestra expectativa.
 
-![sprint](src/ima/cel.jpg)
 \* Puedes encontrarlo en este  [link]
 (https://app.zeplin.io/project/5c3cac78df5be3be058bc082).
 
