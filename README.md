@@ -124,17 +124,17 @@ Las preguntas estaban enfocadas a la funcionalidad, necesidad y expereciencia de
 PROTOTIPO DE BAJA FIDELIDAD 
 Nuestras primeras maquetas la trabajamos en baja fidelidad, teniendo en cuenta  las 4 historias de USUARIO, en las cuales identificamos nuestro sistema de flujo. Nuestra primera historia ………… , es mostrar todos los pokemones de esa forma continuamos trabajando con nuestra segunda historia que se basaba en ordenar ………………,  la tercera historia filtrado por tipos ……………. Y por ultimo nuestra ultima historia  se trata de poder calcular el porcentaje de Pokemones según su tipo, para poder obtener mayor información de cuantos  Pokemones de cada tipo tenemos.
 
-![sprint](src/ima/IMG_5124.jpg)
+![sprint](src/ima/1al.jpg)
 
-![sprint](src/ima/IMG_5125.jpg) 
+![sprint](src/ima/2al.jpg) 
 
-![sprint](src/ima/IMG_5126.jpg)
+![sprint](src/ima/3al.jpg)
 
-![sprint](src/ima/IMG_5127.jpg)
+![sprint](src/ima/4al.jpg)
 
-![sprint](src/ima/IMG_5128.jpg)
+![sprint](src/ima/5al.jpg)
 
-![sprint](src/ima/IMG_5130.jpg)
+![sprint](src/ima/6al.jpg)
 
 PROTOTIPO DE ALTA FIDELIDAD
 Para continuar con nuestro Proyecto,mostramos nuestro trabajo a nuestras compañeras, y con nuestro Squad, en donde obtuvimos muchos feetback  de fuentes de letra, posiciones, imágenes, en pocas palabras estilos, de esa forma  obtuvimos  nuestra segunda maqueta, y pasamos a realizar  el Figma y Zeplin, gracias a cada feetback logramos obtener una mejor versión.
