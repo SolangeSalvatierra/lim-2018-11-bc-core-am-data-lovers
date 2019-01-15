@@ -3,7 +3,7 @@
     padding:0;
     }
 .menu{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #listdePokemones{
@@ -34,7 +34,7 @@
 
 header {
  	width: 100%;
-    background:linear-gradient(red 50% ,rgba(245,245,220,0.1 ));
+    background:linear-gradient(red 70% ,rgba(245,245,220,0.1 ));
     left: 0;
     top:0;
     position: fixed;
@@ -72,7 +72,7 @@ header .contendedor{
         text-decoration: none;
         padding: 10px 10px;
         line-height: normal;
-        font-size: 22px;
+        font-size: 20px;
         font-weight:bold;
         -transition:all 500ms ease;
         -o-transition: all 500ms ease;
@@ -92,7 +92,14 @@ header .contendedor{
     width: 80%;
     padding:100px 10px 0px 155px;	 
 }
+h1,h5 {
+     font-family: 'Open Sans', sans-serif;
+     color: #fff;
+    }
 
+h6,h4 {
+    font-family:'Ubuntu', sans-serif;
+       }
 .pokemones{
     background: rgb(0,0,205);
     border-bottom: 5px solid rgb(0,0,139);
@@ -120,10 +127,10 @@ header .contendedor{
 }
 
 .btn-inf {
-    background: rgb(0,0,205);
+    background: #ffcc00;;
     border-radius: 12px;
     box-shadow: 1px 1px 1px #999;
-    color: #fefe9e;
+    color:rgb(0,0,205);
     cursor: pointer;
     float: left;
     font-family: 'Open Sans', sans-serif;
@@ -133,7 +140,7 @@ header .contendedor{
     margin: 20px 40px 35px 240px;
 }
 .btn-inf:hover{
-    background: #ffcc00;
+    background:  rgb(0,0,205);
     border-bottom: 5px solid #ac953a;
     color:#0b2d55;
 }
@@ -142,20 +149,20 @@ header .contendedor{
     background-image: url(ima/poke.jpg);
     background-size: cover;
     background-position: center;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Ubuntu', sans-serif;
 
 }
 .welcome{
-    background: rgba(255,65,0,0.9);
+    background: rgba(0,151,255,0.9);
     padding:20px;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
 }
 #information{
    background:rgba( 0,139,139,0.7);
    border-radius: 12px;
-   padding: 50px 40px 60px 110px;
+   padding: 50px 40px 10px 110px;
    color: #fff;
    margin: 15px;
     justify-content: center;
@@ -165,7 +172,7 @@ header .contendedor{
 
 .contenedorInf{
 	float: left;
-	padding: 25px;
+	padding: 25px 25px 10px  0px;
     font-size: 20px;
     width: 400px;
     height: 400px;
@@ -174,9 +181,8 @@ header .contendedor{
 
 .imgInf{
 	width: 50%;
-    margin-left: auto;
+    margin-left: 35px;
     margin-right: auto;
-    margin-top: 50px;
 }
 
 #orderpokemon, #typepokemon {
@@ -240,7 +246,7 @@ header .contendedor{
         box-shadow: 1px 1px 1px #999;
         color: #fefe9e;
         cursor: pointer;
-        font-family: 'Raleway', Arial, Helvetica;
+        font-family: 'Ubuntu', sans-serif;
         font-size: 28px;
         padding: 15px ;
         text-align: center;
@@ -258,7 +264,7 @@ header .contendedor{
         width: 15%;
         padding: 5px;
         font-size: 15px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         margin: 5px;
         background: rgb(35,95,190);
         box-shadow: 0 4px 20px rgba(0,0,0,0.16);
@@ -290,7 +296,7 @@ footer{
 a{
 	text-decoration: none;
     font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 	color: #fff;
 }
 
@@ -323,7 +329,7 @@ a{
 
 .list-fondo{
     position: center; 
-    font-family: 'Raleway', Arial, Helvetica;
+    font-family:'Ubuntu', sans-serif;
     font-size: 250%;
     padding: 22px;
     text-align: left; 
@@ -344,7 +350,7 @@ a{
     width: 310px;
 }
 
-@media screen and (max-width: 965px)
+@media screen and (max-width: 460px)
 {
 header nav {
     position: absolute;
@@ -412,7 +418,7 @@ header nav {
         background-image: url(ima/poke.jpg);
         background-size: cover;
         background-position: center;
-        font-family: "Lato",sans-serif;
+        font-family: 'Open Sans', sans-serif;
         /* background-color: white; */
         width: 395px;
     }
@@ -494,7 +500,6 @@ header nav {
     }
     .pokemones{
         font-size: 25px;
-        margin: 20px 10px 10px 30px;
         padding: 18px 25px;
         text-align: center;
         transition: all 0.2s ease 0s;
@@ -539,12 +544,13 @@ header nav {
     }
 
     .btn-inf {
-        margin: 20px 40px 35px 120px;
+        margin: 25px 0px 5px 120px;
     }
     .imgInf {
         width: 95%;
         margin-top: 120px;
-        padding: 15px 10px;
+        padding: 25px 10px 0px;
+        margin-left: 0px;
     }
 }
  
