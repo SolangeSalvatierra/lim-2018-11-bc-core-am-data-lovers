@@ -5,59 +5,81 @@
   <meta charset="utf-8">
   <title>Pokemon Go</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,800i" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts.css"/>
 </head>
 
 <body>
   <!--Navegador-->
-
-  <header class="header2">
+  <header>  
     <div class="wrapper">
       <div>
-        <img src="ima/logoNombre.png" id="imagenLogo">
+        <img src="ima/logoNombre.png" alt="logo nombre" id="imagen-logo">
       </div>
+      <input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar">
+			</label>
       <nav class="menu">
-        <a href="#" id="Start"> Inicio </a>
-        <a href="#" id="Order"> Pokemones </a>
-        <a href="#" id="Filter"> Tipos </a>
-        <a href="#" id="Calculate"> Vs </a>
+        <a href="#" id="Start" class="icon-home"> &nbsp;INICIO </a>
+        <a href="#" id="Order" class="icon-search"> &nbsp;POKEMONES </a>
+        <a href="#" id="Filter" class="icon-filter"> &nbsp;FILTRAR </a>
+        <a href="#" id="Calculate" class="icon-"> %&nbsp;CALCULA </a>
       </nav>
     </div>
   </header>
   <div id="home">
     <!--slider de imagenes-->
-    <div class="slider">
-      <ul>
-        <li><img src="ima/slider1.jpg"></li>
-        <li><img src="ima/slider2.jpg"></li>
-        <li><img src="ima/slider3.jpg"></li>
-        <li><img src="ima/slider5.jpg"></li>
-        <li><img src="ima/slider4.jpg"></li>
-      </ul>
-    </div>
+    
+      <div id="contenedor-slider">
+        <div class="slider">
+
+          <img class="mySlides" src="ima/ima1.png" alt="ima1">
+          <img class="mySlides" src="ima/ima2.png" alt="ima2">
+          <img class="mySlides" src="ima/ima3.png" alt="ima3">
+          <img class="mySlides" src="ima/ima4.png" alt="ima4">
+          <img class="mySlides" src="ima/ima6.png" alt="ima6">
+        </div>
+      </div>
+    
+
     <div>
-      <button id="pokemones"> Conoce tus pokemones </button>
+      <button id="pokemones" class="pokemones"> Conoce tus pokemones </button>
     </div>
     <!--div de informacion-->
-    <div class="history">
-      <section class="Introduction">
-        <p>QUE ES POKEMON GO: DEFINICION
-          Pokémon GO es un videojuego de aventura de realidad aumentada, creado por Niantic, Inc. para dispositivos iOS
-          y Android.
-
-          El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en
-          buscar, capturar, y luchar con los personajes de la saga Pokémon. La aplicación refuerza el concepto de
-          interacción social, porque obliga a reuniones físicas de los usuarios en distintas ubicaciones de sus
-          poblaciones. El éxito generado tras su lanzamiento, incrementó el valor en bolsa de las acciones de Nintendo.
+    <div id="intro" class="welcome">
+      <h1>ENCUENTRA TUS POKEMONES</h1>
+      <p>
+        ¡Bienvenido al Pokédex GO de FG! ¡Aquí hemos catalogado una gran variedad de información sobre cada Pokémon
+        para ayudarte a conocerlos y que puedas vivir un viaje de aventuras! junto a ellos.</p>
+    </div>
+    <!--Seccion de Botones-->
+    <div>
+      <button type="button" class="pokemones" id="mostrar-inf"> ¿Qué es Pokemon Go? </button>
+    </div>
+    <!--Div de informacion sobre Pokemon Go-->
+    <div id="information">
+      <div class="contenedorInf">
+        <p>
+          <h5>QUE ES POKEMON GO: DEFINICION</h5>
         </p>
-      </section>
+        <p> Pokémon GO es un videojuego de aventura de realidad,aumentada creado por Niantic, Inc. para dispositivos
+          iOS y Android.
+        </p>
+        <p>El juego contiene microtransacciones, pero su descarga y desarrollo son gratuitos. Pokémon GO consiste en
+          buscar, capturar, y luchar con los personajes de la saga Pokémon.</p>
+        <p> La aplicación refuerza el concepto de interacción social, porque obliga a reuniones físicas de los usuarios
+          en distintas ubicaciones de sus poblaciones.
+        </p>
+      </div>
+      <img src="ima/jj.jpg" alt="ima jj" class="imgInf">
+      <a href="" class="btn-inf" id="ocultar-inf">Volver</a>
     </div>
   </div>
-
   <!--<SEGUNDA SECCION-->
 <div id="listdePokemones">
   <div id="listOrderPoke">
-    <section class="Content">
       <select id="orderpokemon" class="type-select">
         <option > Ordenar por ...</option>
         <option value="00"> N° Descendente </option>
@@ -65,7 +87,6 @@
         <option value="02"> A - Z </option>
         <option value="03"> Z - A </option>
       </select>
-    </section>
   </div>
   <!-- Listado de pokemones por tipo -->
   <div id="listTypePoke">
@@ -87,24 +108,56 @@
       <option value="13">Veneno</option>
       <option value="14">Volador</option>
     </select>
-    <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
-    <div id="allThePokemones"> </div>
+         <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+    <div id="allThePokemones">  </div>
   </div>
 </div>
 <div id="listCalcuPoke">
-   <section class="Content">
+  <div class="btn-pokemon">
+    <ul id="cont-tipos" class="list-btn">
+      <li><a href="#" class="category-pokemon" value="Normal">NORMAL</a></li>
+      <li><a href="#" class="category-pokemon" value="Fire">FUEGO</a></li>
+      <li><a href="#" class="category-pokemon" value="Water">AGUA</a></li>
+      <li><a href="#" class="category-pokemon" value="Electric">ELECTRICO</a></li>
+      <li><a href="#" class="category-pokemon" value="Grass">PLANTA</a></li>
+      <li><a href="#" class="category-pokemon" value="Ice">HIELO</a></li>
+      <li><a href="#" class="category-pokemon" value="Fighting">LUCHA</a></li>
+      <li><a href="#" class="category-pokemon" value="Poison">VENENO</a></li>
+      <li><a href="#" class="category-pokemon" value="Ground">TIERRA</a></li>
+      <li><a href="#" class="category-pokemon" value="Flying">VOLADOR</a></li>
+      <li><a href="#" class="category-pokemon" value="Psychic">PSIQUICO</a></li>
+      <li><a href="#" class="category-pokemon" value="Bug">BICHO</a></li>
+      <li><a href="#" class="category-pokemon" value="Rock">ROCA</a></li>
+      <li><a href="#" class="category-pokemon" value="Ghost">FANTASMA</a></li>
+      <li><a href="#" class="category-pokemon" value="Dragon">DRAGON</a></li>
+    </ul>
+  </div>
+ <div class="contListCalc">
+    <div id="list-calculo" class="list-fondo">
+      <div id="respuestas">
 
-   </section>
-</div>
+      </div>
+ 
+    </div>
+  </div>
+ </div>
 
-
+<!--footer -->
+<footer>
+  <div class="txt-footer">
+    <p> Created by Bahamonde® & Salvatierra ® </p>
+    <div class="iconSocial">
+      <a href="https://www.facebook.com/PokemonGO/" class="icon-facebook2"></a>
+      <a href="https://www.instagram.com/pokemongoapp/?hl=es-la" class="icon-instagram"></a>
+      <a href="https://twitter.com/pokemongoapp" class="icon-twitter"></a>
+    </div>
+  </div>
+</footer>
   <!--AVERIGUAR QUE ES
     <div id="root"></div>-->
-
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-  <p class="footer"> Created by Kyara Bahamonde ® y Solange Salvatierra ® </p>
 </body>
 
-</html>
+</html>   

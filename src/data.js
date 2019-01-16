@@ -1,10 +1,3 @@
-/* let listpokemon = POKEMON.pokemon;
-let pokemon = JSON.stringify (listpokemon);
-document.getElementById ("list-pokemones").innerHTML = pokemon; */
-
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
 const sortData = (data, sortBy, sortOrder) => {
   let arrOrder = [];
   /* ordenado alfabeticamente */
@@ -47,15 +40,27 @@ const filterData = (data, condition) => {
   for (let i = 0; i < data.length; i++) {
     for (let x = 0; x < data[i].type.length; x++) {
       if (data[i].type[x] === condition) {
-        /* arrType.push(data[i], data[i].name, data[i].id);*/
-        arrType.push(data[i]);
+        arrType.push(data[i]);  
       }
     }  
   }
   return arrType;
 };
- 
+
+const computeStats = (data, typePoke) => {
+  let tipoPorcen = [];
+  for (let i = 0; i < data.length; i++) {
+    for (let x = 0; x < data[i].type.length; x++) {
+      if (data[i].type[x] === typePoke) {
+        tipoPorcen.push(data[i].type[x]);
+      }
+    }
+  }
+  return ('El porcentaje del pokemon de tipo ' + typePoke + ' es: ' + ((tipoPorcen.length) / 151 * 100).toFixed(2).bold() + '%');
+};
+
 window.POKE = {
   sortData,
   filterData,
+  computeStats,
 };
