@@ -1,6 +1,6 @@
-const sortData = (data, sortBy, sortOrder) => {
+/* const sortData = (data, sortBy, sortOrder) => {
   let arrOrder = [];
-  /* ordenado alfabeticamente */
+   ordenado alfabeticamente 
   if (sortBy === 'name') {
     if (sortOrder === 'A-Z') {
       arrOrder = data.sort(function(abc, bcd) {
@@ -16,7 +16,7 @@ const sortData = (data, sortBy, sortOrder) => {
       });
     }
 
-  /* ordenado por id */
+   ordenado por id 
   } else if (sortBy === 'number') {
     if (sortOrder === 'asc') {
       arrOrder = data.sort(function(abc, bcd) {
@@ -32,6 +32,25 @@ const sortData = (data, sortBy, sortOrder) => {
       });
     }
   } 
+  return arrOrder;
+};*/
+
+const sortData = (data, sortBy, sortOrder) => {
+  let arrOrder = [];
+  /* ordenado alfabeticamente */
+  if (sortOrder === 'asc') {
+    arrOrder = data.sort(function(abc, bcd) {
+      if (abc[sortBy] > bcd[sortBy]) return 1;
+      if (abc[sortBy] === bcd[sortBy]) return 0;
+      return -1;
+    });
+  } else {
+    arrOrder = data.sort(function(abc, bcd) {
+      if (bcd[sortBy] > abc[sortBy]) return 1;
+      if (bcd[sortBy] === abc[sortBy]) return 0;
+      return -1;
+    });
+  }
   return arrOrder;
 };
 

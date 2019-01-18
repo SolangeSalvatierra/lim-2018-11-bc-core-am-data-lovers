@@ -74,11 +74,21 @@ document.getElementById('typepokemon').addEventListener('change', (evt) => {
   } 
 });
 
-// Mostrar Funcion Calculo con Ul / li 
+ // Mostrar Funcion Calculo con Ul / li 
 const containerCalcu = document.getElementById('cont-tipos');
 containerCalcu.addEventListener('click', (event) => { 
   document.getElementById('respuestas').innerHTML = (window.POKE.computeStats(dataPoke, event.target.getAttribute('value')));
 });
+
+/* const classname = document.getElementsByClassName("btn-pokemon");
+const myFunction = function() {
+const attribute = this.getAttribute("data-myattribute");
+    alert(attribute);
+};
+
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', myFunction, false);
+}*/
 
 // Nav Inicio
 document.getElementById('Start').addEventListener('click', () => {
